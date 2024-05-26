@@ -1,0 +1,27 @@
+
+kefu.png
+size: 256,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+guaiyong/dipao
+  rotate: false
+  xy: 2, 11
+  size: 116, 114
+  orig: 116, 114
+  offset: 0, 0
+  index: -1
+guaiyong/kefubiao
+  rotate: false
+  xy: 120, 39
+  size: 87, 86
+  orig: 87, 86
+  offset: 0, 0
+  index: -1
+guaiyong/uikefu
+  rotate: false
+  xy: 120, 2
+  size: 67, 35
+  orig: 67, 35
+  offset: 0, 0
+  index: -1

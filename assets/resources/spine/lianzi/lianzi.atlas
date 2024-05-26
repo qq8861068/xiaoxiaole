@@ -1,0 +1,20 @@
+
+lianzi.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+lianbu/lianbu_0
+  rotate: false
+  xy: 2, 60
+  size: 264, 392
+  orig: 264, 392
+  offset: 0, 0
+  index: -1
+lianbu/lianshang_0
+  rotate: false
+  xy: 2, 2
+  size: 460, 56
+  orig: 460, 56
+  offset: 0, 0
+  index: -1

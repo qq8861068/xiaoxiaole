@@ -1,0 +1,153 @@
+
+huaxiao.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+zhangaixiaochu/huaju/guanghua_0
+  rotate: false
+  xy: 2, 144
+  size: 113, 110
+  orig: 113, 113
+  offset: 0, 3
+  index: -1
+zhangaixiaochu/huaju/huaju_0
+  rotate: false
+  xy: 292, 77
+  size: 18, 23
+  orig: 125, 125
+  offset: 53, 51
+  index: -1
+zhangaixiaochu/huaju/huaju_1
+  rotate: false
+  xy: 340, 114
+  size: 20, 37
+  orig: 125, 125
+  offset: 52, 44
+  index: -1
+zhangaixiaochu/huaju/huaju_10
+  rotate: false
+  xy: 313, 153
+  size: 98, 101
+  orig: 125, 125
+  offset: 12, 11
+  index: -1
+zhangaixiaochu/huaju/huaju_11
+  rotate: false
+  xy: 2, 35
+  size: 96, 107
+  orig: 125, 125
+  offset: 13, 9
+  index: -1
+zhangaixiaochu/huaju/huaju_12
+  rotate: false
+  xy: 117, 148
+  size: 96, 106
+  orig: 125, 125
+  offset: 14, 9
+  index: -1
+zhangaixiaochu/huaju/huaju_13
+  rotate: false
+  xy: 215, 149
+  size: 96, 105
+  orig: 125, 125
+  offset: 14, 10
+  index: -1
+zhangaixiaochu/huaju/huaju_14
+  rotate: false
+  xy: 413, 150
+  size: 94, 104
+  orig: 125, 125
+  offset: 15, 10
+  index: -1
+zhangaixiaochu/huaju/huaju_15
+  rotate: false
+  xy: 509, 153
+  size: 92, 101
+  orig: 125, 125
+  offset: 16, 12
+  index: -1
+zhangaixiaochu/huaju/huaju_16
+  rotate: false
+  xy: 165, 65
+  size: 74, 81
+  orig: 125, 125
+  offset: 25, 22
+  index: -1
+zhangaixiaochu/huaju/huaju_17
+  rotate: false
+  xy: 165, 2
+  size: 62, 61
+  orig: 125, 125
+  offset: 31, 32
+  index: -1
+zhangaixiaochu/huaju/huaju_18
+  rotate: false
+  xy: 292, 102
+  size: 46, 45
+  orig: 125, 125
+  offset: 39, 40
+  index: -1
+zhangaixiaochu/huaju/huaju_19
+  rotate: false
+  xy: 2, 4
+  size: 34, 29
+  orig: 125, 125
+  offset: 45, 48
+  index: -1
+zhangaixiaochu/huaju/huaju_2
+  rotate: false
+  xy: 229, 2
+  size: 37, 61
+  orig: 125, 125
+  offset: 42, 32
+  index: -1
+zhangaixiaochu/huaju/huaju_3
+  rotate: false
+  xy: 241, 70
+  size: 49, 77
+  orig: 125, 125
+  offset: 37, 25
+  index: -1
+zhangaixiaochu/huaju/huaju_4
+  rotate: false
+  xy: 100, 44
+  size: 63, 98
+  orig: 125, 125
+  offset: 30, 14
+  index: -1
+zhangaixiaochu/huaju/huaju_5
+  rotate: false
+  xy: 861, 133
+  size: 77, 121
+  orig: 125, 125
+  offset: 24, 2
+  index: -1
+zhangaixiaochu/huaju/huaju_6
+  rotate: false
+  xy: 940, 134
+  size: 75, 120
+  orig: 125, 125
+  offset: 25, 3
+  index: -1
+zhangaixiaochu/huaju/huaju_7
+  rotate: false
+  xy: 779, 135
+  size: 80, 119
+  orig: 125, 125
+  offset: 21, 4
+  index: -1
+zhangaixiaochu/huaju/huaju_8
+  rotate: false
+  xy: 693, 140
+  size: 84, 114
+  orig: 125, 125
+  offset: 19, 5
+  index: -1
+zhangaixiaochu/huaju/huaju_9
+  rotate: false
+  xy: 603, 145
+  size: 88, 109
+  orig: 125, 125
+  offset: 17, 8
+  index: -1

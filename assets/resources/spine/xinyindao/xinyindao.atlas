@@ -1,0 +1,55 @@
+
+xinyindao.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+gaoguangdanzhen
+  rotate: false
+  xy: 2, 84
+  size: 142, 142
+  orig: 142, 142
+  offset: 0, 0
+  index: -1
+hand/022
+  rotate: false
+  xy: 276, 101
+  size: 125, 125
+  orig: 125, 125
+  offset: 0, 0
+  index: -1
+hand1
+  rotate: false
+  xy: 84, 17
+  size: 64, 65
+  orig: 64, 65
+  offset: 0, 0
+  index: -1
+hand2
+  rotate: false
+  xy: 150, 50
+  size: 35, 46
+  orig: 35, 46
+  offset: 0, 0
+  index: -1
+xinyinyong/baiquan
+  rotate: false
+  xy: 2, 2
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+xinyinyong/bl-huan01
+  rotate: false
+  xy: 146, 98
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+xinyinyong/jiantouxiao
+  rotate: false
+  xy: 403, 115
+  size: 72, 111
+  orig: 72, 111
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,20 @@
+
+xingzhuang.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+xiaoxingzhuang/kuangyong/kuangdi_0
+  rotate: false
+  xy: 254, 102
+  size: 146, 145
+  orig: 146, 145
+  offset: 0, 0
+  index: -1
+xiaoxingzhuang/kuangyong/kuangshang_0
+  rotate: false
+  xy: 2, 2
+  size: 250, 245
+  orig: 250, 245
+  offset: 0, 0
+  index: -1

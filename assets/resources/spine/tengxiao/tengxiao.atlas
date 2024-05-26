@@ -1,0 +1,111 @@
+
+tengxiao.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+zhangaixiaochu/tengxiao/tengxiao_0
+  rotate: false
+  xy: 302, 17
+  size: 85, 88
+  orig: 118, 106
+  offset: 19, 8
+  index: -1
+zhangaixiaochu/tengxiao/tengxiao_1
+  rotate: false
+  xy: 212, 12
+  size: 88, 91
+  orig: 118, 106
+  offset: 18, 4
+  index: -1
+zhangaixiaochu/tengxiao/tengxiao_10
+  rotate: false
+  xy: 2, 2
+  size: 114, 100
+  orig: 118, 106
+  offset: 2, 6
+  index: -1
+zhangaixiaochu/tengxiao/tengxiao_11
+  rotate: false
+  xy: 119, 105
+  size: 114, 100
+  orig: 118, 106
+  offset: 2, 6
+  index: -1
+zhangaixiaochu/tengxiao/tengxiao_12
+  rotate: false
+  xy: 352, 107
+  size: 113, 98
+  orig: 118, 106
+  offset: 2, 8
+  index: -1
+zhangaixiaochu/tengxiao/tengxiao_13
+  rotate: false
+  xy: 905, 17
+  size: 105, 93
+  orig: 118, 106
+  offset: 6, 13
+  index: -1
+zhangaixiaochu/tengxiao/tengxiao_14
+  rotate: false
+  xy: 905, 112
+  size: 107, 93
+  orig: 118, 106
+  offset: 6, 13
+  index: -1
+zhangaixiaochu/tengxiao/tengxiao_2
+  rotate: false
+  xy: 118, 7
+  size: 92, 95
+  orig: 118, 106
+  offset: 16, 2
+  index: -1
+zhangaixiaochu/tengxiao/tengxiao_3
+  rotate: false
+  xy: 802, 5
+  size: 98, 98
+  orig: 118, 106
+  offset: 12, 0
+  index: -1
+zhangaixiaochu/tengxiao/tengxiao_4
+  rotate: false
+  xy: 802, 105
+  size: 101, 100
+  orig: 118, 106
+  offset: 10, 0
+  index: -1
+zhangaixiaochu/tengxiao/tengxiao_5
+  rotate: false
+  xy: 694, 100
+  size: 106, 105
+  orig: 118, 106
+  offset: 7, 0
+  index: -1
+zhangaixiaochu/tengxiao/tengxiao_6
+  rotate: false
+  xy: 582, 107
+  size: 110, 98
+  orig: 118, 106
+  offset: 5, 4
+  index: -1
+zhangaixiaochu/tengxiao/tengxiao_7
+  rotate: false
+  xy: 467, 109
+  size: 113, 96
+  orig: 118, 106
+  offset: 2, 8
+  index: -1
+zhangaixiaochu/tengxiao/tengxiao_8
+  rotate: false
+  xy: 235, 107
+  size: 115, 98
+  orig: 118, 106
+  offset: 0, 7
+  index: -1
+zhangaixiaochu/tengxiao/tengxiao_9
+  rotate: false
+  xy: 2, 104
+  size: 115, 101
+  orig: 118, 106
+  offset: 1, 5
+  index: -1

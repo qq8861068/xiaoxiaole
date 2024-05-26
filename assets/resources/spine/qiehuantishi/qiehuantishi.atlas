@@ -1,0 +1,62 @@
+
+qiehuantishi.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sansiwuxiao/guang2_0
+  rotate: false
+  xy: 130, 16
+  size: 125, 117
+  orig: 125, 117
+  offset: 0, 0
+  index: -1
+sansiwuxiao/guangqiu
+  rotate: false
+  xy: 2, 7
+  size: 126, 126
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+sansiwuxiao/naixiaoyong/caidiguang
+  rotate: false
+  xy: 257, 2
+  size: 63, 62
+  orig: 63, 62
+  offset: 0, 0
+  index: -1
+sansiwuxiao/naixiaoyong/caitiao
+  rotate: false
+  xy: 257, 66
+  size: 67, 67
+  orig: 67, 67
+  offset: 0, 0
+  index: -1
+sansiwuxiao/naixiaoyong/effect_1
+  rotate: false
+  xy: 2, 198
+  size: 334, 56
+  orig: 334, 56
+  offset: 0, 0
+  index: -1
+sansiwuxiao/naixiaoyong/effect_2
+  rotate: false
+  xy: 2, 135
+  size: 276, 61
+  orig: 348, 63
+  offset: 36, 2
+  index: -1
+sansiwuxiao/naixiaoyong/siyecao_0
+  rotate: false
+  xy: 338, 106
+  size: 123, 148
+  orig: 203, 204
+  offset: 40, 41
+  index: -1
+sansiwuxiao/xiaodanhua
+  rotate: false
+  xy: 463, 223
+  size: 36, 31
+  orig: 36, 31
+  offset: 0, 0
+  index: -1

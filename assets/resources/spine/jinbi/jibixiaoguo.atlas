@@ -1,0 +1,83 @@
+
+jibixiaoguo.png
+size: 1024,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bjl/bjlequan_0
+  rotate: false
+  xy: 841, 38
+  size: 55, 81
+  orig: 123, 126
+  offset: 7, 4
+  index: -1
+bjl/bjlequan_1
+  rotate: false
+  xy: 559, 24
+  size: 69, 95
+  orig: 123, 126
+  offset: 8, 1
+  index: -1
+bjl/bjlequan_2
+  rotate: false
+  xy: 394, 14
+  size: 80, 105
+  orig: 123, 126
+  offset: 9, 0
+  index: -1
+bjl/bjlequan_3
+  rotate: false
+  xy: 218, 8
+  size: 86, 111
+  orig: 123, 126
+  offset: 13, 1
+  index: -1
+bjl/bjlequan_4
+  rotate: false
+  xy: 129, 6
+  size: 87, 113
+  orig: 123, 126
+  offset: 21, 3
+  index: -1
+bjl/bjlequan_5
+  rotate: false
+  xy: 306, 9
+  size: 86, 110
+  orig: 123, 126
+  offset: 30, 8
+  index: -1
+bjl/bjlequan_6
+  rotate: false
+  xy: 476, 16
+  size: 81, 103
+  orig: 123, 126
+  offset: 40, 15
+  index: -1
+bjl/bjlequan_7
+  rotate: false
+  xy: 630, 26
+  size: 71, 93
+  orig: 123, 126
+  offset: 52, 25
+  index: -1
+bjl/bjlequan_8
+  rotate: false
+  xy: 783, 38
+  size: 56, 81
+  orig: 123, 126
+  offset: 67, 35
+  index: -1
+jinbixiao/guang2_0
+  rotate: false
+  xy: 2, 2
+  size: 125, 117
+  orig: 125, 117
+  offset: 0, 0
+  index: -1
+jinbixiao/jinbida
+  rotate: false
+  xy: 703, 45
+  size: 78, 74
+  orig: 78, 74
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,48 @@
+
+duihuankouhong.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+chaifen/duihuanlihe/duihuanguang_0
+  rotate: false
+  xy: 120, 18
+  size: 125, 98
+  orig: 154, 135
+  offset: 16, 19
+  index: -1
+chaifen/duihuanlihe/jianglilingqu
+  rotate: false
+  xy: 247, 84
+  size: 116, 32
+  orig: 116, 32
+  offset: 0, 0
+  index: -1
+chaifen/duihuanlihe/kouhonghe1
+  rotate: false
+  xy: 247, 26
+  size: 88, 56
+  orig: 88, 56
+  offset: 0, 0
+  index: -1
+chaifen/duihuanlihe/maoguang
+  rotate: false
+  xy: 337, 43
+  size: 59, 35
+  orig: 59, 35
+  offset: 0, 0
+  index: -1
+chaifen/duihuanlihe/yinying
+  rotate: false
+  xy: 365, 80
+  size: 86, 36
+  orig: 86, 36
+  offset: 0, 0
+  index: -1
+dipao
+  rotate: false
+  xy: 2, 2
+  size: 116, 114
+  orig: 116, 114
+  offset: 0, 0
+  index: -1

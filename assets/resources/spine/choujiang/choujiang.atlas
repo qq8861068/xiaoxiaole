@@ -1,0 +1,62 @@
+
+choujiang.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+chaifen/xiaozhuanpan/pandi
+  rotate: false
+  xy: 254, 46
+  size: 47, 36
+  orig: 47, 36
+  offset: 0, 0
+  index: -1
+chaifen/xiaozhuanpan/panying
+  rotate: false
+  xy: 120, 20
+  size: 75, 16
+  orig: 75, 16
+  offset: 0, 0
+  index: -1
+chaifen/xiaozhuanpan/panzi
+  rotate: false
+  xy: 120, 38
+  size: 85, 78
+  orig: 85, 78
+  offset: 0, 0
+  index: -1
+chaifen/xiaozhuanpan/panziguang
+  rotate: false
+  xy: 207, 31
+  size: 45, 51
+  orig: 85, 78
+  offset: 20, 15
+  index: -1
+chaifen/xiaozhuanpan/xiaodeng
+  rotate: false
+  xy: 324, 98
+  size: 18, 18
+  orig: 18, 18
+  offset: 0, 0
+  index: -1
+chaifen/xiaozhuanpan/xingyunzhuanpan
+  rotate: false
+  xy: 207, 84
+  size: 115, 32
+  orig: 115, 32
+  offset: 0, 0
+  index: -1
+chaifen/xiaozhuanpan/zhizhen
+  rotate: false
+  xy: 303, 49
+  size: 18, 33
+  orig: 18, 33
+  offset: 0, 0
+  index: -1
+dipao
+  rotate: false
+  xy: 2, 2
+  size: 116, 114
+  orig: 116, 114
+  offset: 0, 0
+  index: -1

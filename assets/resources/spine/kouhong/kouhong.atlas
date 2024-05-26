@@ -1,0 +1,27 @@
+
+kouhong.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+daoguang/kouhong_0
+  rotate: false
+  xy: 130, 141
+  size: 101, 106
+  orig: 106, 106
+  offset: 2, 0
+  index: -1
+guang2_0
+  rotate: false
+  xy: 2, 2
+  size: 125, 117
+  orig: 125, 117
+  offset: 0, 0
+  index: -1
+guangqiu
+  rotate: false
+  xy: 2, 121
+  size: 126, 126
+  orig: 128, 128
+  offset: 0, 0
+  index: -1

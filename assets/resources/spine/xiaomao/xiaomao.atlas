@@ -1,0 +1,90 @@
+
+xiaomao.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+xiaoxiaojiemian3/xinmao/bizizui
+  rotate: false
+  xy: 57, 10
+  size: 19, 17
+  orig: 19, 17
+  offset: 0, 0
+  index: -1
+xiaoxiaojiemian3/xinmao/houtui
+  rotate: false
+  xy: 274, 13
+  size: 53, 52
+  orig: 53, 52
+  offset: 0, 0
+  index: -1
+xiaoxiaojiemian3/xinmao/shenti
+  rotate: false
+  xy: 274, 67
+  size: 117, 59
+  orig: 117, 59
+  offset: 0, 0
+  index: -1
+xiaoxiaojiemian3/xinmao/toulian
+  rotate: false
+  xy: 393, 61
+  size: 65, 65
+  orig: 65, 65
+  offset: 0, 0
+  index: -1
+xiaoxiaojiemian3/xinmao/weiba
+  rotate: false
+  xy: 329, 15
+  size: 43, 50
+  orig: 43, 50
+  offset: 0, 0
+  index: -1
+xiaoxiaojiemian3/xinmao/weijian
+  rotate: false
+  xy: 2, 3
+  size: 53, 24
+  orig: 53, 24
+  offset: 0, 0
+  index: -1
+xiaoxiaojiemian3/xinmao/yinying
+  rotate: false
+  xy: 2, 29
+  size: 270, 97
+  orig: 270, 97
+  offset: 0, 0
+  index: -1
+xiaoxiaojiemian3/xinmao/youer
+  rotate: false
+  xy: 374, 2
+  size: 19, 20
+  orig: 19, 20
+  offset: 0, 0
+  index: -1
+xiaoxiaojiemian3/xinmao/youtui
+  rotate: false
+  xy: 460, 81
+  size: 49, 45
+  orig: 49, 45
+  offset: 0, 0
+  index: -1
+xiaoxiaojiemian3/xinmao/zhangzui
+  rotate: false
+  xy: 460, 64
+  size: 24, 15
+  orig: 24, 15
+  offset: 0, 0
+  index: -1
+xiaoxiaojiemian3/xinmao/zuoer
+  rotate: false
+  xy: 429, 33
+  size: 25, 26
+  orig: 27, 26
+  offset: 0, 0
+  index: -1
+xiaoxiaojiemian3/xinmao/zuotui
+  rotate: false
+  xy: 374, 24
+  size: 53, 35
+  orig: 53, 35
+  offset: 0, 0
+  index: -1

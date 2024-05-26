@@ -1,0 +1,76 @@
+
+shengyubushu.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+baoxin
+  rotate: false
+  xy: 571, 144
+  size: 133, 127
+  orig: 133, 127
+  offset: 0, 0
+  index: -1
+huaxin_0
+  rotate: false
+  xy: 2, 194
+  size: 217, 229
+  orig: 217, 229
+  offset: 0, 0
+  index: -1
+shengyuxinpai/paiguang/hongquan_0
+  rotate: false
+  xy: 221, 131
+  size: 174, 140
+  orig: 174, 140
+  offset: 0, 0
+  index: -1
+shengyuxinpai/paiguang/paiguangtiao_0
+  rotate: false
+  xy: 2, 2
+  size: 162, 38
+  orig: 162, 38
+  offset: 0, 0
+  index: -1
+shengyuxinpai/paiguang/zhuanguang/zhuanguang_0
+  rotate: false
+  xy: 397, 121
+  size: 172, 150
+  orig: 193, 150
+  offset: 10, 0
+  index: -1
+shengyuxinpai/paiguang/zhuanguang/zhuanguang_1
+  rotate: false
+  xy: 781, 273
+  size: 178, 150
+  orig: 193, 150
+  offset: 8, 0
+  index: -1
+shengyuxinpai/paiguang/zhuanguang/zhuanguang_2
+  rotate: false
+  xy: 2, 42
+  size: 186, 150
+  orig: 193, 150
+  offset: 3, 0
+  index: -1
+shengyuxinpai/paiguang/zhuanguang/zhuanguang_3
+  rotate: false
+  xy: 221, 273
+  size: 186, 150
+  orig: 193, 150
+  offset: 3, 0
+  index: -1
+shengyuxinpai/paiguang/zhuanguang/zhuanguang_4
+  rotate: false
+  xy: 409, 273
+  size: 186, 150
+  orig: 193, 150
+  offset: 3, 0
+  index: -1
+shengyuxinpai/paiguang/zhuanguang/zhuanguang_5
+  rotate: false
+  xy: 597, 273
+  size: 182, 150
+  orig: 193, 150
+  offset: 5, 0
+  index: -1

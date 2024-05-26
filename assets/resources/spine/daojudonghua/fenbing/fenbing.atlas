@@ -1,0 +1,55 @@
+
+fenbing.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+juesechaifen/daoguang/fenbiang_0
+  rotate: false
+  xy: 130, 145
+  size: 100, 106
+  orig: 106, 106
+  offset: 3, 0
+  index: -1
+juesechaifen/fenbing/fenbingsaihong
+  rotate: false
+  xy: 2, 2
+  size: 2, 2
+  orig: 25, 17
+  offset: 9, 9
+  index: -1
+juesechaifen/fenbing/fenbingshen
+  rotate: false
+  xy: 130, 64
+  size: 68, 79
+  orig: 68, 79
+  offset: 0, 0
+  index: -1
+juesechaifen/fenbing/fenbingyan
+  rotate: false
+  xy: 200, 137
+  size: 19, 6
+  orig: 19, 6
+  offset: 0, 0
+  index: -1
+juesechaifen/fenbing/fenbingzui
+  rotate: false
+  xy: 232, 239
+  size: 21, 12
+  orig: 21, 15
+  offset: 0, 0
+  index: -1
+juesechaifen/guang2_0
+  rotate: false
+  xy: 2, 6
+  size: 125, 117
+  orig: 125, 117
+  offset: 0, 0
+  index: -1
+juesechaifen/guangqiu
+  rotate: false
+  xy: 2, 125
+  size: 126, 126
+  orig: 128, 128
+  offset: 0, 0
+  index: -1

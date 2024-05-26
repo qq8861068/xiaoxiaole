@@ -1,0 +1,27 @@
+
+kaishidong.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+zhujiemian/kaishi/kaishiyingzi
+  rotate: false
+  xy: 202, 169
+  size: 121, 54
+  orig: 121, 54
+  offset: 0, 0
+  index: -1
+zhujiemian/kaishi/maozi
+  rotate: false
+  xy: 202, 102
+  size: 96, 65
+  orig: 96, 65
+  offset: 0, 0
+  index: -1
+zhujiemian/kaishi/tiaozhanren
+  rotate: false
+  xy: 2, 2
+  size: 198, 221
+  orig: 198, 221
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,83 @@
+
+mutong.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+mutong/mutong (1)
+  rotate: false
+  xy: 900, 758
+  size: 112, 177
+  orig: 112, 177
+  offset: 0, 0
+  index: -1
+mutong/mutong (10)
+  rotate: false
+  xy: 298, 311
+  size: 294, 304
+  orig: 295, 304
+  offset: 1, 0
+  index: -1
+mutong/mutong (11)
+  rotate: false
+  xy: 2, 617
+  size: 304, 318
+  orig: 305, 318
+  offset: 1, 0
+  index: -1
+mutong/mutong (2)
+  rotate: false
+  xy: 493, 84
+  size: 145, 225
+  orig: 145, 225
+  offset: 0, 0
+  index: -1
+mutong/mutong (3)
+  rotate: false
+  xy: 594, 403
+  size: 145, 225
+  orig: 145, 225
+  offset: 0, 0
+  index: -1
+mutong/mutong (4)
+  rotate: false
+  xy: 298, 86
+  size: 193, 223
+  orig: 193, 223
+  offset: 0, 0
+  index: -1
+mutong/mutong (5)
+  rotate: false
+  xy: 741, 406
+  size: 192, 223
+  orig: 192, 223
+  offset: 0, 0
+  index: -1
+mutong/mutong (6)
+  rotate: false
+  xy: 2, 309
+  size: 294, 306
+  orig: 295, 306
+  offset: 1, 0
+  index: -1
+mutong/mutong (7)
+  rotate: false
+  xy: 308, 630
+  size: 294, 305
+  orig: 295, 305
+  offset: 1, 0
+  index: -1
+mutong/mutong (8)
+  rotate: false
+  xy: 2, 2
+  size: 294, 305
+  orig: 295, 305
+  offset: 1, 0
+  index: -1
+mutong/mutong (9)
+  rotate: false
+  xy: 604, 631
+  size: 294, 304
+  orig: 295, 304
+  offset: 1, 0
+  index: -1

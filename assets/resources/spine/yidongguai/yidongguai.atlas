@@ -1,0 +1,258 @@
+
+yidongguai.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+zhangaixiaochu/fankui/fankui_0
+  rotate: false
+  xy: 717, 337
+  size: 35, 33
+  orig: 114, 138
+  offset: 31, 54
+  index: -1
+zhangaixiaochu/fankui/fankui_10
+  rotate: false
+  xy: 594, 142
+  size: 65, 83
+  orig: 114, 138
+  offset: 7, 29
+  index: -1
+zhangaixiaochu/fankui/fankui_2
+  rotate: false
+  xy: 636, 300
+  size: 79, 70
+  orig: 114, 138
+  offset: 2, 29
+  index: -1
+zhangaixiaochu/fankui/fankui_4
+  rotate: false
+  xy: 414, 250
+  size: 90, 106
+  orig: 114, 138
+  offset: 18, 17
+  index: -1
+zhangaixiaochu/fankui/fankui_6
+  rotate: false
+  xy: 322, 222
+  size: 90, 127
+  orig: 114, 138
+  offset: 17, 8
+  index: -1
+zhangaixiaochu/fankui/fankui_8
+  rotate: false
+  xy: 510, 143
+  size: 82, 82
+  orig: 114, 138
+  offset: 8, 29
+  index: -1
+zhangaixiaochu/xiaobao/xiaobao_0
+  rotate: false
+  xy: 778, 263
+  size: 117, 129
+  orig: 163, 161
+  offset: 23, 14
+  index: -1
+zhangaixiaochu/xiaobao/xiaobao_1
+  rotate: false
+  xy: 636, 372
+  size: 140, 138
+  orig: 163, 161
+  offset: 13, 10
+  index: -1
+zhangaixiaochu/xiaobao/xiaobao_10
+  rotate: false
+  xy: 911, 389
+  size: 110, 121
+  orig: 163, 161
+  offset: 13, 10
+  index: -1
+zhangaixiaochu/xiaobao/xiaobao_11
+  rotate: false
+  xy: 897, 267
+  size: 115, 120
+  orig: 163, 161
+  offset: 13, 13
+  index: -1
+zhangaixiaochu/xiaobao/xiaobao_12
+  rotate: false
+  xy: 506, 296
+  size: 116, 66
+  orig: 163, 161
+  offset: 17, 65
+  index: -1
+zhangaixiaochu/xiaobao/xiaobao_13
+  rotate: false
+  xy: 506, 227
+  size: 114, 67
+  orig: 163, 161
+  offset: 21, 66
+  index: -1
+zhangaixiaochu/xiaobao/xiaobao_14
+  rotate: false
+  xy: 412, 180
+  size: 96, 34
+  orig: 163, 161
+  offset: 38, 102
+  index: -1
+zhangaixiaochu/xiaobao/xiaobao_15
+  rotate: false
+  xy: 414, 216
+  size: 90, 32
+  orig: 163, 161
+  offset: 40, 106
+  index: -1
+zhangaixiaochu/xiaobao/xiaobao_16
+  rotate: false
+  xy: 322, 194
+  size: 88, 26
+  orig: 163, 161
+  offset: 43, 108
+  index: -1
+zhangaixiaochu/xiaobao/xiaobao_17
+  rotate: false
+  xy: 2, 4
+  size: 89, 23
+  orig: 163, 161
+  offset: 44, 111
+  index: -1
+zhangaixiaochu/xiaobao/xiaobao_2
+  rotate: false
+  xy: 164, 192
+  size: 156, 157
+  orig: 163, 161
+  offset: 5, 0
+  index: -1
+zhangaixiaochu/xiaobao/xiaobao_3
+  rotate: false
+  xy: 2, 29
+  size: 158, 159
+  orig: 163, 161
+  offset: 3, 0
+  index: -1
+zhangaixiaochu/xiaobao/xiaobao_4
+  rotate: false
+  xy: 2, 190
+  size: 160, 159
+  orig: 163, 161
+  offset: 1, 0
+  index: -1
+zhangaixiaochu/xiaobao/xiaobao_5
+  rotate: false
+  xy: 165, 351
+  size: 160, 159
+  orig: 163, 161
+  offset: 1, 0
+  index: -1
+zhangaixiaochu/xiaobao/xiaobao_6
+  rotate: false
+  xy: 2, 351
+  size: 161, 159
+  orig: 163, 161
+  offset: 0, 0
+  index: -1
+zhangaixiaochu/xiaobao/xiaobao_7
+  rotate: false
+  xy: 327, 358
+  size: 155, 152
+  orig: 163, 161
+  offset: 1, 7
+  index: -1
+zhangaixiaochu/xiaobao/xiaobao_8
+  rotate: false
+  xy: 484, 364
+  size: 150, 146
+  orig: 163, 161
+  offset: 3, 10
+  index: -1
+zhangaixiaochu/xiaobao/xiaobao_9
+  rotate: false
+  xy: 778, 394
+  size: 131, 116
+  orig: 163, 161
+  offset: 3, 20
+  index: -1
+zhangaixiaochu/yidongguai/guaicha
+  rotate: false
+  xy: 717, 307
+  size: 32, 28
+  orig: 32, 28
+  offset: 0, 0
+  index: -1
+zhangaixiaochu/yidongguai/shenti
+  rotate: false
+  xy: 897, 201
+  size: 63, 64
+  orig: 63, 64
+  offset: 0, 0
+  index: -1
+zhangaixiaochu/yidongguai/xiaoguaibiao
+  rotate: false
+  xy: 754, 339
+  size: 9, 6
+  orig: 9, 6
+  offset: 0, 0
+  index: -1
+zhangaixiaochu/yidongguai/yandi
+  rotate: false
+  xy: 962, 249
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+zhangaixiaochu/yidongguai/yanzhu
+  rotate: false
+  xy: 980, 254
+  size: 12, 11
+  orig: 12, 11
+  offset: 0, 0
+  index: -1
+zhangaixiaochu/yidongguai/youer
+  rotate: false
+  xy: 93, 5
+  size: 21, 22
+  orig: 21, 22
+  offset: 0, 0
+  index: -1
+zhangaixiaochu/yidongguai/youjiao
+  rotate: false
+  xy: 624, 336
+  size: 9, 12
+  orig: 9, 12
+  offset: 0, 0
+  index: -1
+zhangaixiaochu/yidongguai/youshou
+  rotate: false
+  xy: 116, 14
+  size: 15, 13
+  orig: 15, 13
+  offset: 0, 0
+  index: -1
+zhangaixiaochu/yidongguai/zuibaxin
+  rotate: false
+  xy: 116, 2
+  size: 17, 10
+  orig: 17, 10
+  offset: 0, 0
+  index: -1
+zhangaixiaochu/yidongguai/zuoer
+  rotate: false
+  xy: 754, 347
+  size: 22, 23
+  orig: 22, 23
+  offset: 0, 0
+  index: -1
+zhangaixiaochu/yidongguai/zuojiao
+  rotate: false
+  xy: 624, 350
+  size: 10, 12
+  orig: 10, 12
+  offset: 0, 0
+  index: -1
+zhangaixiaochu/yidongguai/zuoshou
+  rotate: false
+  xy: 962, 233
+  size: 14, 14
+  orig: 14, 14
+  offset: 0, 0
+  index: -1

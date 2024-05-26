@@ -1,0 +1,265 @@
+
+huodetishi.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bjl/bjlequan_0
+  rotate: false
+  xy: 328, 57
+  size: 55, 81
+  orig: 123, 126
+  offset: 7, 4
+  index: -1
+bjl/bjlequan_1
+  rotate: false
+  xy: 756, 150
+  size: 69, 95
+  orig: 123, 126
+  offset: 8, 1
+  index: -1
+bjl/bjlequan_2
+  rotate: false
+  xy: 303, 140
+  size: 80, 105
+  orig: 123, 126
+  offset: 9, 0
+  index: -1
+bjl/bjlequan_3
+  rotate: false
+  xy: 126, 19
+  size: 86, 111
+  orig: 123, 126
+  offset: 13, 1
+  index: -1
+bjl/bjlequan_4
+  rotate: false
+  xy: 126, 132
+  size: 87, 113
+  orig: 123, 126
+  offset: 21, 3
+  index: -1
+bjl/bjlequan_5
+  rotate: false
+  xy: 215, 135
+  size: 86, 110
+  orig: 123, 126
+  offset: 30, 8
+  index: -1
+bjl/bjlequan_6
+  rotate: false
+  xy: 385, 142
+  size: 81, 103
+  orig: 123, 126
+  offset: 40, 15
+  index: -1
+bjl/bjlequan_7
+  rotate: false
+  xy: 891, 162
+  size: 71, 93
+  orig: 123, 126
+  offset: 52, 25
+  index: -1
+bjl/bjlequan_8
+  rotate: false
+  xy: 385, 59
+  size: 56, 81
+  orig: 123, 126
+  offset: 67, 35
+  index: -1
+huodequan/huodequan_0
+  rotate: false
+  xy: 494, 66
+  size: 44, 74
+  orig: 87, 114
+  offset: 3, 2
+  index: -1
+huodequan/huodequan_1
+  rotate: false
+  xy: 275, 49
+  size: 51, 84
+  orig: 87, 114
+  offset: 4, 2
+  index: -1
+huodequan/huodequan_2
+  rotate: false
+  xy: 214, 39
+  size: 59, 91
+  orig: 87, 114
+  offset: 4, 2
+  index: -1
+huodequan/huodequan_3
+  rotate: false
+  xy: 687, 147
+  size: 67, 98
+  orig: 87, 114
+  offset: 4, 2
+  index: -1
+huodequan/huodequan_4
+  rotate: false
+  xy: 543, 145
+  size: 72, 100
+  orig: 87, 114
+  offset: 6, 4
+  index: -1
+huodequan/huodequan_5
+  rotate: false
+  xy: 468, 142
+  size: 73, 103
+  orig: 87, 114
+  offset: 10, 5
+  index: -1
+huodequan/huodequan_6
+  rotate: false
+  xy: 617, 142
+  size: 68, 103
+  orig: 87, 114
+  offset: 16, 8
+  index: -1
+huodequan/huodequan_7
+  rotate: false
+  xy: 827, 146
+  size: 62, 99
+  orig: 87, 114
+  offset: 22, 12
+  index: -1
+huodequan/huodequan_8
+  rotate: false
+  xy: 964, 161
+  size: 56, 94
+  orig: 87, 114
+  offset: 28, 17
+  index: -1
+huodequan/huodequan_9
+  rotate: false
+  xy: 443, 58
+  size: 49, 82
+  orig: 87, 114
+  offset: 35, 29
+  index: -1
+sheguang2/sheguang_28
+  rotate: false
+  xy: 2, 238
+  size: 122, 116
+  orig: 122, 116
+  offset: 0, 0
+  index: -1
+sheguang2/sheguang_29
+  rotate: false
+  xy: 129, 365
+  size: 122, 116
+  orig: 122, 116
+  offset: 0, 0
+  index: -1
+sheguang2/sheguang_30
+  rotate: false
+  xy: 2, 120
+  size: 122, 116
+  orig: 122, 116
+  offset: 0, 0
+  index: -1
+sheguang2/sheguang_31
+  rotate: false
+  xy: 253, 365
+  size: 122, 116
+  orig: 122, 116
+  offset: 0, 0
+  index: -1
+sheguang2/sheguang_32
+  rotate: false
+  xy: 2, 2
+  size: 122, 116
+  orig: 122, 116
+  offset: 0, 0
+  index: -1
+sheguang2/sheguang_33
+  rotate: false
+  xy: 377, 365
+  size: 122, 116
+  orig: 122, 116
+  offset: 0, 0
+  index: -1
+sheguang2/sheguang_34
+  rotate: false
+  xy: 501, 365
+  size: 122, 116
+  orig: 122, 116
+  offset: 0, 0
+  index: -1
+sheguang2/sheguang_35
+  rotate: false
+  xy: 625, 365
+  size: 122, 116
+  orig: 122, 116
+  offset: 0, 0
+  index: -1
+sheguang2/sheguang_36
+  rotate: false
+  xy: 749, 365
+  size: 122, 116
+  orig: 122, 116
+  offset: 0, 0
+  index: -1
+sheguang2/sheguang_37
+  rotate: false
+  xy: 873, 365
+  size: 122, 116
+  orig: 122, 116
+  offset: 0, 0
+  index: -1
+sheguang2/sheguang_38
+  rotate: false
+  xy: 749, 247
+  size: 121, 116
+  orig: 122, 116
+  offset: 0, 0
+  index: -1
+sheguang2/sheguang_39
+  rotate: false
+  xy: 129, 247
+  size: 122, 116
+  orig: 122, 116
+  offset: 0, 0
+  index: -1
+sheguang2/sheguang_40
+  rotate: false
+  xy: 253, 247
+  size: 122, 116
+  orig: 122, 116
+  offset: 0, 0
+  index: -1
+sheguang2/sheguang_41
+  rotate: false
+  xy: 377, 247
+  size: 122, 116
+  orig: 122, 116
+  offset: 0, 0
+  index: -1
+sheguang2/sheguang_42
+  rotate: false
+  xy: 501, 247
+  size: 122, 116
+  orig: 122, 116
+  offset: 0, 0
+  index: -1
+sheguang2/sheguang_43
+  rotate: false
+  xy: 625, 247
+  size: 122, 116
+  orig: 122, 116
+  offset: 0, 0
+  index: -1
+shenyubushu/quan3_2_0
+  rotate: false
+  xy: 2, 356
+  size: 125, 125
+  orig: 134, 135
+  offset: 5, 5
+  index: -1
+zhijiayou_0
+  rotate: false
+  xy: 872, 257
+  size: 106, 106
+  orig: 106, 106
+  offset: 0, 0
+  index: -1

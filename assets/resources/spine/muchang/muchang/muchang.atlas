@@ -1,0 +1,139 @@
+
+muchang.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+chaifen/duihuanlihe/maoguang
+  rotate: false
+  xy: 120, 28
+  size: 59, 35
+  orig: 59, 35
+  offset: 0, 0
+  index: -1
+chaifen/muchangrukou/baoyanxu/baoyanxu_0
+  rotate: false
+  xy: 378, 23
+  size: 25, 28
+  orig: 44, 40
+  offset: 12, 5
+  index: -1
+chaifen/muchangrukou/baoyanxu/baoyanxu_1
+  rotate: false
+  xy: 350, 22
+  size: 26, 29
+  orig: 44, 40
+  offset: 11, 4
+  index: -1
+chaifen/muchangrukou/baoyanxu/baoyanxu_10
+  rotate: false
+  xy: 463, 93
+  size: 37, 32
+  orig: 44, 40
+  offset: 3, 5
+  index: -1
+chaifen/muchangrukou/baoyanxu/baoyanxu_11
+  rotate: false
+  xy: 423, 91
+  size: 38, 34
+  orig: 44, 40
+  offset: 3, 4
+  index: -1
+chaifen/muchangrukou/baoyanxu/baoyanxu_2
+  rotate: false
+  xy: 290, 25
+  size: 28, 30
+  orig: 44, 40
+  offset: 10, 4
+  index: -1
+chaifen/muchangrukou/baoyanxu/baoyanxu_3
+  rotate: false
+  xy: 257, 25
+  size: 31, 32
+  orig: 44, 40
+  offset: 8, 3
+  index: -1
+chaifen/muchangrukou/baoyanxu/baoyanxu_4
+  rotate: false
+  xy: 299, 57
+  size: 33, 34
+  orig: 44, 40
+  offset: 7, 2
+  index: -1
+chaifen/muchangrukou/baoyanxu/baoyanxu_5
+  rotate: false
+  xy: 423, 53
+  size: 33, 36
+  orig: 44, 40
+  offset: 6, 2
+  index: -1
+chaifen/muchangrukou/baoyanxu/baoyanxu_6
+  rotate: false
+  xy: 262, 59
+  size: 35, 32
+  orig: 44, 40
+  offset: 5, 3
+  index: -1
+chaifen/muchangrukou/baoyanxu/baoyanxu_7
+  rotate: false
+  xy: 219, 29
+  size: 36, 29
+  orig: 44, 40
+  offset: 3, 6
+  index: -1
+chaifen/muchangrukou/baoyanxu/baoyanxu_8
+  rotate: false
+  xy: 223, 60
+  size: 37, 31
+  orig: 44, 40
+  offset: 3, 5
+  index: -1
+chaifen/muchangrukou/baoyanxu/baoyanxu_9
+  rotate: false
+  xy: 181, 30
+  size: 36, 33
+  orig: 44, 40
+  offset: 4, 4
+  index: -1
+chaifen/muchangrukou/muchangdi
+  rotate: false
+  xy: 120, 65
+  size: 101, 60
+  orig: 101, 60
+  offset: 0, 0
+  index: -1
+chaifen/muchangrukou/muchangfangzi
+  rotate: false
+  xy: 341, 53
+  size: 80, 72
+  orig: 80, 72
+  offset: 0, 0
+  index: -1
+chaifen/muchangrukou/muchanglibayou
+  rotate: false
+  xy: 320, 23
+  size: 28, 28
+  orig: 28, 28
+  offset: 0, 0
+  index: -1
+chaifen/muchangrukou/muchanglibazuo
+  rotate: false
+  xy: 120, 2
+  size: 23, 24
+  orig: 23, 24
+  offset: 0, 0
+  index: -1
+chaifen/muchangrukou/muchangzi
+  rotate: false
+  xy: 223, 93
+  size: 116, 32
+  orig: 116, 32
+  offset: 0, 0
+  index: -1
+dipao
+  rotate: false
+  xy: 2, 11
+  size: 116, 114
+  orig: 116, 114
+  offset: 0, 0
+  index: -1

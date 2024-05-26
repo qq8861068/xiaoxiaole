@@ -1,0 +1,55 @@
+
+loadingdong.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+xiaoxiaojiemian/diaoxingxing
+  rotate: false
+  xy: 528, 147
+  size: 37, 40
+  orig: 37, 40
+  offset: 0, 0
+  index: -1
+xiaoxiaojiemian3/tiao
+  rotate: false
+  xy: 521, 79
+  size: 5, 169
+  orig: 5, 169
+  offset: 0, 0
+  index: -1
+xiaoxiaojiemian3/xingzhui1
+  rotate: false
+  xy: 2, 2
+  size: 42, 40
+  orig: 42, 40
+  offset: 0, 0
+  index: -1
+xiaoxiaojiemian3/xingzhui2
+  rotate: false
+  xy: 528, 189
+  size: 60, 59
+  orig: 60, 59
+  offset: 0, 0
+  index: -1
+xiaoxiaojiemian3/xingzhui3
+  rotate: false
+  xy: 2, 44
+  size: 60, 60
+  orig: 60, 60
+  offset: 0, 0
+  index: -1
+xiaoxiaojiemian3/xingzhuixin
+  rotate: false
+  xy: 64, 48
+  size: 57, 56
+  orig: 57, 56
+  offset: 0, 0
+  index: -1
+xiaoxiaojiemian3/xinyong/loading_biaoti
+  rotate: false
+  xy: 2, 106
+  size: 517, 142
+  orig: 518, 142
+  offset: 0, 0
+  index: -1

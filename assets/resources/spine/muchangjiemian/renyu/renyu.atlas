@@ -1,0 +1,83 @@
+
+renyu.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+renyu/renyu0
+  rotate: false
+  xy: 822, 203
+  size: 115, 176
+  orig: 115, 176
+  offset: 0, 0
+  index: -1
+renyu/renyu10
+  rotate: false
+  xy: 2, 191
+  size: 116, 188
+  orig: 116, 188
+  offset: 0, 0
+  index: -1
+renyu/renyu2
+  rotate: false
+  xy: 119, 13
+  size: 115, 176
+  orig: 115, 176
+  offset: 0, 0
+  index: -1
+renyu/renyu3
+  rotate: false
+  xy: 2, 2
+  size: 115, 187
+  orig: 115, 187
+  offset: 0, 0
+  index: -1
+renyu/renyu4
+  rotate: false
+  xy: 120, 192
+  size: 115, 187
+  orig: 115, 187
+  offset: 0, 0
+  index: -1
+renyu/renyu5
+  rotate: false
+  xy: 237, 192
+  size: 115, 187
+  orig: 115, 187
+  offset: 0, 0
+  index: -1
+renyu/renyu6
+  rotate: false
+  xy: 354, 192
+  size: 115, 187
+  orig: 115, 187
+  offset: 0, 0
+  index: -1
+renyu/renyu7
+  rotate: false
+  xy: 471, 192
+  size: 115, 187
+  orig: 115, 187
+  offset: 0, 0
+  index: -1
+renyu/renyu8
+  rotate: false
+  xy: 588, 192
+  size: 115, 187
+  orig: 115, 187
+  offset: 0, 0
+  index: -1
+renyu/renyu9
+  rotate: false
+  xy: 705, 192
+  size: 115, 187
+  orig: 115, 187
+  offset: 0, 0
+  index: -1
+renyu/rernyu1
+  rotate: false
+  xy: 236, 14
+  size: 115, 176
+  orig: 115, 176
+  offset: 0, 0
+  index: -1

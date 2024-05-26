@@ -1,0 +1,153 @@
+
+zhuanpandonghua.png
+size: 1024,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+zhuanpanyong/zhuanpanxin/xingyunsao/xingyunsao_0
+  rotate: false
+  xy: 49, 14
+  size: 33, 72
+  orig: 386, 182
+  offset: 44, 55
+  index: -1
+zhuanpanyong/zhuanpanxin/xingyunsao/xingyunsao_1
+  rotate: false
+  xy: 347, 545
+  size: 44, 76
+  orig: 386, 182
+  offset: 64, 56
+  index: -1
+zhuanpanyong/zhuanpanxin/xingyunsao/xingyunsao_2
+  rotate: false
+  xy: 658, 1230
+  size: 39, 63
+  orig: 386, 182
+  offset: 105, 58
+  index: -1
+zhuanpanyong/zhuanpanxin/xingyunsao/xingyunsao_3
+  rotate: false
+  xy: 86, 166
+  size: 35, 73
+  orig: 386, 182
+  offset: 143, 58
+  index: -1
+zhuanpanyong/zhuanpanxin/xingyunsao/xingyunsao_4
+  rotate: false
+  xy: 716, 1632
+  size: 31, 79
+  orig: 386, 182
+  offset: 182, 60
+  index: -1
+zhuanpanyong/zhuanpanxin/xingyunsao/xingyunsao_5
+  rotate: false
+  xy: 274, 303
+  size: 35, 81
+  orig: 386, 182
+  offset: 210, 55
+  index: -1
+zhuanpanyong/zhuanpanxin/xingyunsao/xingyunsao_6
+  rotate: false
+  xy: 982, 1965
+  size: 37, 81
+  orig: 386, 182
+  offset: 237, 50
+  index: -1
+zhuanpanyong/zhuanpanxin/xingyunsao/xingyunsao_7
+  rotate: false
+  xy: 658, 1295
+  size: 46, 85
+  orig: 386, 182
+  offset: 264, 50
+  index: -1
+zhuanpanyong/zhuanpanxin/xingyunsao/xingyunsao_8
+  rotate: false
+  xy: 2, 2
+  size: 45, 84
+  orig: 386, 182
+  offset: 292, 51
+  index: -1
+zhuanpanyong/zhuanpanxin/xingyunsao/xingyunsao_9
+  rotate: false
+  xy: 948, 1723
+  size: 24, 57
+  orig: 386, 182
+  offset: 320, 56
+  index: -1
+zhuanpanyong/zhuanpanxin/xingyunzhuan_0
+  rotate: false
+  xy: 716, 1713
+  size: 230, 67
+  orig: 386, 182
+  offset: 79, 61
+  index: -1
+zhuanpanyong/zhuanpanxin/xinyundaidi
+  rotate: false
+  xy: 2, 502
+  size: 343, 119
+  orig: 343, 119
+  offset: 0, 0
+  index: -1
+zhuanpanyong/zhuanpanxin/zhuandeng2
+  rotate: false
+  xy: 2, 745
+  size: 654, 635
+  orig: 654, 635
+  offset: 0, 0
+  index: -1
+zhuanpanyong/zhuanpanxin/zhuandengguang2
+  rotate: false
+  xy: 2, 1382
+  size: 712, 664
+  orig: 712, 664
+  offset: 0, 0
+  index: -1
+zhuanpanyong/zhuanpanxin/zhuanpan_zhizhen
+  rotate: false
+  xy: 2, 88
+  size: 82, 151
+  orig: 82, 151
+  offset: 0, 0
+  index: -1
+zhuanpanyong/zhuanpanzi/beiguangtiao
+  rotate: false
+  xy: 2, 241
+  size: 270, 143
+  orig: 270, 143
+  offset: 0, 0
+  index: -1
+zhuanpanyong/zhuanpanzi/beixing
+  rotate: false
+  xy: 637, 719
+  size: 19, 24
+  orig: 19, 24
+  offset: 0, 0
+  index: -1
+zhuanpanyong/zhuanpanzi/zideng
+  rotate: false
+  xy: 2, 623
+  size: 344, 120
+  orig: 344, 120
+  offset: 0, 0
+  index: -1
+zhuanpanyong/zhuanpanzi/zidengzhuan1
+  rotate: false
+  xy: 2, 386
+  size: 342, 114
+  orig: 344, 120
+  offset: 0, 0
+  index: -1
+zhuanpanyong/zhuanpanzi/zidengzhuan2
+  rotate: false
+  xy: 348, 623
+  size: 287, 120
+  orig: 344, 120
+  offset: 57, 0
+  index: -1
+zhuanpanyong/zhuanpanzi/ziguangyun
+  rotate: false
+  xy: 716, 1782
+  size: 264, 264
+  orig: 264, 264
+  offset: 0, 0
+  index: -1

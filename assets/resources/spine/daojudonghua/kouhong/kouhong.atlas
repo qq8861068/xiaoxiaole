@@ -1,0 +1,90 @@
+
+kouhong.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+juesechaifen/daoguang/kouhong_0
+  rotate: false
+  xy: 130, 148
+  size: 101, 106
+  orig: 106, 106
+  offset: 2, 0
+  index: -1
+juesechaifen/guang2_0
+  rotate: false
+  xy: 2, 9
+  size: 125, 117
+  orig: 125, 117
+  offset: 0, 0
+  index: -1
+juesechaifen/guangqiu
+  rotate: false
+  xy: 2, 128
+  size: 126, 126
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+juesechaifen/kouhong/kouhongjiao
+  rotate: false
+  xy: 149, 3
+  size: 30, 7
+  orig: 30, 7
+  offset: 0, 0
+  index: -1
+juesechaifen/kouhong/kouhongyan
+  rotate: false
+  xy: 129, 2
+  size: 18, 18
+  orig: 18, 18
+  offset: 0, 0
+  index: -1
+juesechaifen/kouhong/kouhongyouer
+  rotate: false
+  xy: 233, 243
+  size: 20, 11
+  orig: 20, 11
+  offset: 0, 0
+  index: -1
+juesechaifen/kouhong/niubizi
+  rotate: false
+  xy: 203, 128
+  size: 25, 6
+  orig: 25, 6
+  offset: 0, 0
+  index: -1
+juesechaifen/kouhong/niumeimao
+  rotate: false
+  xy: 2, 5
+  size: 32, 2
+  orig: 32, 2
+  offset: 0, 0
+  index: -1
+juesechaifen/kouhong/niushanglian
+  rotate: false
+  xy: 130, 69
+  size: 71, 77
+  orig: 71, 77
+  offset: 0, 0
+  index: -1
+juesechaifen/kouhong/niuxialian
+  rotate: false
+  xy: 129, 22
+  size: 71, 45
+  orig: 71, 45
+  offset: 0, 0
+  index: -1
+juesechaifen/kouhong/niuzui
+  rotate: false
+  xy: 203, 136
+  size: 25, 10
+  orig: 25, 10
+  offset: 0, 0
+  index: -1
+juesechaifen/kouhong/niuzuijiao
+  rotate: false
+  xy: 149, 12
+  size: 31, 8
+  orig: 31, 8
+  offset: 0, 0
+  index: -1

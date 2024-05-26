@@ -1,0 +1,160 @@
+
+gongxishengli.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+shengli/gongxidi
+  rotate: false
+  xy: 356, 356
+  size: 532, 146
+  orig: 532, 146
+  offset: 0, 0
+  index: -1
+shengli/gongzi
+  rotate: false
+  xy: 520, 91
+  size: 78, 73
+  orig: 78, 73
+  offset: 0, 0
+  index: -1
+shengli/guanzi
+  rotate: false
+  xy: 122, 72
+  size: 69, 76
+  orig: 69, 76
+  offset: 0, 0
+  index: -1
+shengli/guoguandisao/guansao_0
+  rotate: false
+  xy: 922, 359
+  size: 26, 43
+  orig: 348, 127
+  offset: 41, 30
+  index: -1
+shengli/guoguandisao/guansao_1
+  rotate: false
+  xy: 122, 22
+  size: 53, 48
+  orig: 348, 127
+  offset: 41, 27
+  index: -1
+shengli/guoguandisao/guansao_2
+  rotate: false
+  xy: 262, 81
+  size: 50, 67
+  orig: 348, 127
+  offset: 66, 27
+  index: -1
+shengli/guoguandisao/guansao_3
+  rotate: false
+  xy: 600, 96
+  size: 51, 68
+  orig: 348, 127
+  offset: 93, 30
+  index: -1
+shengli/guoguandisao/guansao_4
+  rotate: false
+  xy: 694, 35
+  size: 47, 57
+  orig: 348, 127
+  offset: 127, 44
+  index: -1
+shengli/guoguandisao/guansao_5
+  rotate: false
+  xy: 976, 386
+  size: 42, 56
+  orig: 348, 127
+  offset: 162, 45
+  index: -1
+shengli/guoguandisao/guansao_6
+  rotate: false
+  xy: 976, 444
+  size: 44, 58
+  orig: 348, 127
+  offset: 194, 42
+  index: -1
+shengli/guoguandisao/guansao_7
+  rotate: false
+  xy: 589, 20
+  size: 48, 69
+  orig: 348, 127
+  offset: 224, 27
+  index: -1
+shengli/guoguandisao/guansao_8
+  rotate: false
+  xy: 639, 29
+  size: 53, 63
+  orig: 348, 127
+  offset: 250, 27
+  index: -1
+shengli/guoguandisao/guansao_9
+  rotate: false
+  xy: 890, 356
+  size: 30, 46
+  orig: 348, 127
+  offset: 277, 29
+  index: -1
+shengli/guozi
+  rotate: false
+  xy: 193, 80
+  size: 67, 68
+  orig: 67, 68
+  offset: 0, 0
+  index: -1
+shengli/shengguang
+  rotate: false
+  xy: 2, 150
+  size: 352, 352
+  orig: 352, 352
+  offset: 0, 0
+  index: -1
+shengli/shengliangdian
+  rotate: false
+  xy: 356, 166
+  size: 309, 188
+  orig: 309, 188
+  offset: 0, 0
+  index: -1
+shengli/shenglichibang
+  rotate: false
+  xy: 890, 404
+  size: 84, 98
+  orig: 84, 98
+  offset: 0, 0
+  index: -1
+shengli/shenglixing
+  rotate: false
+  xy: 2, 34
+  size: 118, 114
+  orig: 118, 115
+  offset: 0, 1
+  index: -1
+shengli/shengneiquan
+  rotate: false
+  xy: 356, 2
+  size: 162, 162
+  orig: 162, 162
+  offset: 0, 0
+  index: -1
+shengli/shengwaiquan
+  rotate: false
+  xy: 667, 94
+  size: 260, 260
+  orig: 260, 260
+  offset: 0, 0
+  index: -1
+shengli/shengxing
+  rotate: false
+  xy: 314, 108
+  size: 30, 40
+  orig: 30, 40
+  offset: 0, 0
+  index: -1
+shengli/xizi
+  rotate: false
+  xy: 520, 16
+  size: 67, 73
+  orig: 67, 73
+  offset: 0, 0
+  index: -1

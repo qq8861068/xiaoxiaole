@@ -1,0 +1,62 @@
+
+yanying.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+juesechaifen/daoguang/xiangxinguang_0
+  rotate: false
+  xy: 130, 141
+  size: 96, 106
+  orig: 106, 106
+  offset: 5, 0
+  index: -1
+juesechaifen/guang2_0
+  rotate: false
+  xy: 2, 2
+  size: 125, 117
+  orig: 125, 117
+  offset: 0, 0
+  index: -1
+juesechaifen/guangqiu
+  rotate: false
+  xy: 2, 121
+  size: 126, 126
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+juesechaifen/yanying/yanyingshen
+  rotate: false
+  xy: 130, 62
+  size: 64, 77
+  orig: 64, 77
+  offset: 0, 0
+  index: -1
+juesechaifen/yanying/yanyingyanbai
+  rotate: false
+  xy: 228, 226
+  size: 19, 21
+  orig: 19, 21
+  offset: 0, 0
+  index: -1
+juesechaifen/yanying/yanyingyandi
+  rotate: false
+  xy: 196, 119
+  size: 19, 20
+  orig: 19, 20
+  offset: 0, 0
+  index: -1
+juesechaifen/yanying/yanyingyanzhu
+  rotate: false
+  xy: 228, 210
+  size: 10, 14
+  orig: 10, 14
+  offset: 0, 0
+  index: -1
+juesechaifen/yanying/yanyingzui
+  rotate: false
+  xy: 129, 48
+  size: 22, 12
+  orig: 22, 12
+  offset: 0, 0
+  index: -1

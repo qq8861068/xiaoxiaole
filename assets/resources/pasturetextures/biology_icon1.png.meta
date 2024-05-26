@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "2d78101b-b8ae-45c2-a399-e53fac5a9b87",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 100,
+  "height": 100,
+  "platformSettings": {},
+  "subMetas": {
+    "biology_icon1": {
+      "ver": "1.0.6",
+      "uuid": "294fd644-d83c-4bdb-942a-064d5ad3b669",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "2d78101b-b8ae-45c2-a399-e53fac5a9b87",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 1,
+      "offsetY": -2.5,
+      "trimX": 21,
+      "trimY": 26,
+      "width": 60,
+      "height": 53,
+      "rawWidth": 100,
+      "rawHeight": 100,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,83 @@
+
+xiaoshi.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sansiwuxiao/guangqiu
+  rotate: false
+  xy: 584, 162
+  size: 126, 126
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+sansiwuxiao/naixiaoyong/caoguang_0
+  rotate: false
+  xy: 227, 102
+  size: 187, 186
+  orig: 203, 204
+  offset: 8, 9
+  index: -1
+sansiwuxiao/naixiaoyong/danyexin
+  rotate: false
+  xy: 2, 2
+  size: 59, 59
+  orig: 59, 59
+  offset: 0, 0
+  index: -1
+sansiwuxiao/sanxu/sanxu_0
+  rotate: false
+  xy: 902, 370
+  size: 99, 106
+  orig: 228, 186
+  offset: 39, 63
+  index: -1
+sansiwuxiao/sanxu/sanxu_1
+  rotate: false
+  xy: 712, 190
+  size: 103, 102
+  orig: 228, 186
+  offset: 57, 44
+  index: -1
+sansiwuxiao/sanxu/sanxu_2
+  rotate: false
+  xy: 416, 143
+  size: 166, 145
+  orig: 228, 186
+  offset: 18, 30
+  index: -1
+sansiwuxiao/sanxu/sanxu_3
+  rotate: false
+  xy: 683, 294
+  size: 217, 182
+  orig: 228, 186
+  offset: 0, 4
+  index: -1
+sansiwuxiao/sanxu/sanxu_4
+  rotate: false
+  xy: 2, 63
+  size: 221, 186
+  orig: 228, 186
+  offset: 0, 0
+  index: -1
+sansiwuxiao/sanxu/sanxu_5
+  rotate: false
+  xy: 457, 290
+  size: 224, 186
+  orig: 228, 186
+  offset: 1, 0
+  index: -1
+sansiwuxiao/sanxu/sanxu_6
+  rotate: false
+  xy: 227, 290
+  size: 228, 186
+  orig: 228, 186
+  offset: 0, 0
+  index: -1
+sansiwuxiao/taoquan_3
+  rotate: false
+  xy: 2, 251
+  size: 223, 225
+  orig: 223, 225
+  offset: 0, 0
+  index: -1

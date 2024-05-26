@@ -1,0 +1,20 @@
+
+niu2.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+zhujiemian/niuchai/niu2yinying
+  rotate: false
+  xy: 2, 2
+  size: 229, 26
+  orig: 229, 26
+  offset: 0, 0
+  index: -1
+zhujiemian/niuchai/niuniu2
+  rotate: false
+  xy: 2, 30
+  size: 237, 133
+  orig: 237, 133
+  offset: 0, 0
+  index: -1

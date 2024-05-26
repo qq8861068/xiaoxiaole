@@ -1,0 +1,20 @@
+
+kuaisukaishi.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+zhujiemian/libakuaikai/kaishijian
+  rotate: false
+  xy: 2, 2
+  size: 184, 106
+  orig: 184, 106
+  offset: 0, 0
+  index: -1
+zhujiemian/libakuaikai/zhuanjinzi
+  rotate: false
+  xy: 188, 59
+  size: 121, 49
+  orig: 121, 49
+  offset: 0, 0
+  index: -1

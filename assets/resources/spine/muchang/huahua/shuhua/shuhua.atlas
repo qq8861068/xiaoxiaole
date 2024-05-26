@@ -1,0 +1,104 @@
+
+shuhua.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+huahuazong/effect_1_0
+  rotate: false
+  xy: 388, 40
+  size: 15, 84
+  orig: 19, 112
+  offset: 2, 10
+  index: -1
+huahuazong/effect_2
+  rotate: false
+  xy: 364, 24
+  size: 22, 100
+  orig: 22, 124
+  offset: 0, 12
+  index: -1
+huahuazong/guangqiu2
+  rotate: false
+  xy: 236, 61
+  size: 63, 63
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+huahuazong/hongquan
+  rotate: false
+  xy: 133, 23
+  size: 101, 101
+  orig: 102, 101
+  offset: 1, 0
+  index: -1
+huahuazong/huanquan_0
+  rotate: false
+  xy: 2, 31
+  size: 129, 93
+  orig: 159, 140
+  offset: 15, 23
+  index: -1
+huahuazong/shuhua/hua1
+  rotate: false
+  xy: 405, 86
+  size: 38, 38
+  orig: 38, 38
+  offset: 0, 0
+  index: -1
+huahuazong/shuhua/hua2
+  rotate: false
+  xy: 236, 32
+  size: 27, 27
+  orig: 27, 27
+  offset: 0, 0
+  index: -1
+huahuazong/shuhua/hua3
+  rotate: false
+  xy: 405, 59
+  size: 24, 25
+  orig: 24, 25
+  offset: 0, 0
+  index: -1
+huahuazong/shuhua/hua4
+  rotate: false
+  xy: 2, 2
+  size: 29, 27
+  orig: 29, 27
+  offset: 0, 0
+  index: -1
+huahuazong/shuhua/ye1
+  rotate: false
+  xy: 33, 7
+  size: 18, 22
+  orig: 18, 22
+  offset: 0, 0
+  index: -1
+huahuazong/shuhua/ye2
+  rotate: false
+  xy: 405, 41
+  size: 15, 16
+  orig: 15, 16
+  offset: 0, 0
+  index: -1
+huahuazong/shuhua/ye4
+  rotate: false
+  xy: 265, 43
+  size: 18, 16
+  orig: 18, 16
+  offset: 0, 0
+  index: -1
+huahuazong/shuhua/ye5
+  rotate: false
+  xy: 445, 102
+  size: 20, 22
+  orig: 20, 22
+  offset: 0, 0
+  index: -1
+huahuazong/xingguang
+  rotate: false
+  xy: 301, 70
+  size: 61, 54
+  orig: 61, 54
+  offset: 0, 0
+  index: -1

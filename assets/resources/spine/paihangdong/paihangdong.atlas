@@ -1,0 +1,27 @@
+
+paihangdong.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+guaiyong/dipao
+  rotate: false
+  xy: 2, 2
+  size: 116, 114
+  orig: 116, 114
+  offset: 0, 0
+  index: -1
+guaiyong/paihangbiao
+  rotate: false
+  xy: 120, 13
+  size: 91, 103
+  orig: 91, 103
+  offset: 0, 0
+  index: -1
+guaiyong/uipaihang
+  rotate: false
+  xy: 213, 82
+  size: 67, 34
+  orig: 67, 34
+  offset: 0, 0
+  index: -1

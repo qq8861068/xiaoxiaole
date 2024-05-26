@@ -1,0 +1,195 @@
+
+xiaoniu.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+xinniu/chaihao/bikouguang2
+  rotate: false
+  xy: 256, 80
+  size: 58, 16
+  orig: 58, 16
+  offset: 0, 0
+  index: -1
+xinniu/chaihao/doubu
+  rotate: false
+  xy: 256, 98
+  size: 95, 68
+  orig: 95, 68
+  offset: 0, 0
+  index: -1
+xinniu/chaihao/jiandaiyou
+  rotate: false
+  xy: 113, 59
+  size: 21, 41
+  orig: 21, 41
+  offset: 0, 0
+  index: -1
+xinniu/chaihao/jiandaizuo
+  rotate: false
+  xy: 479, 153
+  size: 21, 41
+  orig: 21, 41
+  offset: 0, 0
+  index: -1
+xinniu/chaihao/lianguang
+  rotate: false
+  xy: 2, 34
+  size: 105, 6
+  orig: 105, 6
+  offset: 0, 0
+  index: -1
+xinniu/chaihao/lianyinying
+  rotate: false
+  xy: 395, 196
+  size: 108, 52
+  orig: 108, 52
+  offset: 0, 0
+  index: -1
+xinniu/chaihao/maozi2
+  rotate: false
+  xy: 447, 104
+  size: 40, 33
+  orig: 40, 33
+  offset: 0, 0
+  index: -1
+xinniu/chaihao/meimaoyou
+  rotate: false
+  xy: 479, 142
+  size: 15, 9
+  orig: 15, 9
+  offset: 0, 0
+  index: -1
+xinniu/chaihao/meimaozuo
+  rotate: false
+  xy: 113, 48
+  size: 15, 9
+  orig: 15, 9
+  offset: 0, 0
+  index: -1
+xinniu/chaihao/muniuxialian
+  rotate: false
+  xy: 256, 168
+  size: 137, 80
+  orig: 138, 80
+  offset: 1, 0
+  index: -1
+xinniu/chaihao/niujiao2
+  rotate: false
+  xy: 136, 64
+  size: 51, 17
+  orig: 51, 17
+  offset: 0, 0
+  index: -1
+xinniu/chaihao/niulian
+  rotate: false
+  xy: 2, 102
+  size: 135, 146
+  orig: 135, 146
+  offset: 0, 0
+  index: -1
+xinniu/chaihao/shenti
+  rotate: false
+  xy: 139, 83
+  size: 115, 165
+  orig: 115, 165
+  offset: 0, 0
+  index: -1
+xinniu/chaihao/yougebo
+  rotate: false
+  xy: 405, 139
+  size: 72, 55
+  orig: 72, 55
+  offset: 0, 0
+  index: -1
+xinniu/chaihao/zanshou2
+  rotate: false
+  xy: 353, 90
+  size: 50, 76
+  orig: 50, 76
+  offset: 0, 0
+  index: -1
+xinniu/chaihao/zuibazheng
+  rotate: false
+  xy: 51, 8
+  size: 52, 24
+  orig: 52, 24
+  offset: 0, 0
+  index: -1
+xinniu/chaihao/zuijiaoyou
+  rotate: false
+  xy: 447, 91
+  size: 15, 11
+  orig: 17, 14
+  offset: 0, 2
+  index: -1
+xinniu/chaihao/zuoer2
+  rotate: false
+  xy: 2, 2
+  size: 47, 30
+  orig: 47, 30
+  offset: 0, 0
+  index: -1
+xinniu/chaihao/zuogeboshou
+  rotate: false
+  xy: 2, 42
+  size: 109, 58
+  orig: 109, 58
+  offset: 0, 0
+  index: -1
+xinniu/yanjingzong/shangyanpichai
+  rotate: false
+  xy: 189, 63
+  size: 33, 18
+  orig: 33, 18
+  offset: 0, 0
+  index: -1
+xinniu/yanjingzong/yandi
+  rotate: false
+  xy: 405, 89
+  size: 40, 48
+  orig: 40, 48
+  offset: 0, 0
+  index: -1
+xinniu/yanjingzong/yandiguang
+  rotate: false
+  xy: 224, 53
+  size: 23, 28
+  orig: 23, 28
+  offset: 0, 0
+  index: -1
+xinniu/yanjingzong/yanguang1
+  rotate: false
+  xy: 395, 185
+  size: 8, 9
+  orig: 8, 9
+  offset: 0, 0
+  index: -1
+xinniu/yanjingzong/yanguang2
+  rotate: false
+  xy: 274, 71
+  size: 10, 7
+  orig: 10, 7
+  offset: 0, 0
+  index: -1
+xinniu/yanjingzong/yanguang3
+  rotate: false
+  xy: 395, 176
+  size: 6, 7
+  orig: 6, 7
+  offset: 0, 0
+  index: -1
+xinniu/yanjingzong/yanjiemao
+  rotate: false
+  xy: 316, 87
+  size: 19, 9
+  orig: 19, 9
+  offset: 0, 0
+  index: -1
+xinniu/yanjingzong/yanzhu
+  rotate: false
+  xy: 249, 49
+  size: 23, 29
+  orig: 23, 29
+  offset: 0, 0
+  index: -1

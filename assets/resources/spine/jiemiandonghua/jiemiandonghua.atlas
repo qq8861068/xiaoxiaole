@@ -1,0 +1,230 @@
+
+jiemiandonghua.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+zhujiemian/beijingqian
+  rotate: false
+  xy: 2, 1233
+  size: 1423, 758
+  orig: 1423, 758
+  offset: 0, 0
+  index: -1
+zhujiemian/dayu
+  rotate: false
+  xy: 2, 680
+  size: 816, 220
+  orig: 816, 220
+  offset: 0, 0
+  index: -1
+zhujiemian/fangzi
+  rotate: false
+  xy: 2, 211
+  size: 244, 235
+  orig: 244, 235
+  offset: 0, 0
+  index: -1
+zhujiemian/jiemianxiaohe1
+  rotate: false
+  xy: 475, 500
+  size: 46, 48
+  orig: 46, 48
+  offset: 0, 0
+  index: -1
+zhujiemian/jiemianxiaohe2
+  rotate: false
+  xy: 1864, 1808
+  size: 45, 55
+  orig: 45, 55
+  offset: 0, 0
+  index: -1
+zhujiemian/libakuaikai/hudie/chibangyou
+  rotate: false
+  xy: 2015, 1976
+  size: 14, 15
+  orig: 14, 15
+  offset: 0, 0
+  index: -1
+zhujiemian/libakuaikai/hudie/chibangzuo
+  rotate: false
+  xy: 248, 423
+  size: 20, 23
+  orig: 20, 23
+  offset: 0, 0
+  index: -1
+zhujiemian/libakuaikai/hudie/chujiaoyou
+  rotate: false
+  xy: 1414, 1225
+  size: 10, 6
+  orig: 10, 6
+  offset: 0, 0
+  index: -1
+zhujiemian/libakuaikai/hudie/chujiaozuo
+  rotate: false
+  xy: 719, 902
+  size: 10, 9
+  orig: 10, 9
+  offset: 0, 0
+  index: -1
+zhujiemian/libakuaikai/hudie/hushen
+  rotate: false
+  xy: 1236, 1159
+  size: 16, 12
+  orig: 16, 12
+  offset: 0, 0
+  index: -1
+zhujiemian/libakuaikai/mogu
+  rotate: false
+  xy: 1028, 1023
+  size: 28, 39
+  orig: 28, 39
+  offset: 0, 0
+  index: -1
+zhujiemian/libakuaikai/xinliba
+  rotate: false
+  xy: 1427, 1759
+  size: 435, 232
+  orig: 435, 232
+  offset: 0, 0
+  index: -1
+zhujiemian/niuchai/chicao
+  rotate: false
+  xy: 1580, 1447
+  size: 41, 25
+  orig: 41, 25
+  offset: 0, 0
+  index: -1
+zhujiemian/niuchai/niu2yinying
+  rotate: false
+  xy: 1626, 1731
+  size: 229, 26
+  orig: 229, 26
+  offset: 0, 0
+  index: -1
+zhujiemian/niuchai/niuniu2
+  rotate: false
+  xy: 2, 76
+  size: 237, 133
+  orig: 237, 133
+  offset: 0, 0
+  index: -1
+zhujiemian/niuchai/niushen
+  rotate: false
+  xy: 475, 550
+  size: 122, 128
+  orig: 122, 128
+  offset: 0, 0
+  index: -1
+zhujiemian/niuchai/niutou
+  rotate: false
+  xy: 1427, 1241
+  size: 92, 107
+  orig: 92, 107
+  offset: 0, 0
+  index: -1
+zhujiemian/niuchai/niutui
+  rotate: false
+  xy: 997, 991
+  size: 29, 59
+  orig: 29, 59
+  offset: 0, 0
+  index: -1
+zhujiemian/niuchai/niuyinying
+  rotate: false
+  xy: 719, 913
+  size: 151, 35
+  orig: 151, 35
+  offset: 0, 0
+  index: -1
+zhujiemian/shan
+  rotate: false
+  xy: 2, 902
+  size: 715, 329
+  orig: 715, 330
+  offset: 0, 1
+  index: -1
+zhujiemian/shuye1
+  rotate: false
+  xy: 2, 448
+  size: 269, 230
+  orig: 269, 230
+  offset: 0, 0
+  index: -1
+zhujiemian/shuye2
+  rotate: false
+  xy: 1028, 1064
+  size: 206, 167
+  orig: 206, 168
+  offset: 0, 1
+  index: -1
+zhujiemian/weilan
+  rotate: false
+  xy: 2, 2
+  size: 159, 72
+  orig: 159, 72
+  offset: 0, 0
+  index: -1
+zhujiemian/xiaocao1
+  rotate: false
+  xy: 719, 950
+  size: 276, 100
+  orig: 277, 102
+  offset: 0, 1
+  index: -1
+zhujiemian/xiaocao2
+  rotate: false
+  xy: 273, 453
+  size: 200, 225
+  orig: 200, 225
+  offset: 0, 0
+  index: -1
+zhujiemian/xiaocao3
+  rotate: false
+  xy: 1427, 1350
+  size: 151, 122
+  orig: 152, 123
+  offset: 1, 0
+  index: -1
+zhujiemian/xiaocao4
+  rotate: false
+  xy: 1427, 1474
+  size: 197, 283
+  orig: 197, 283
+  offset: 0, 0
+  index: -1
+zhujiemian/xiaoniu4
+  rotate: false
+  xy: 599, 630
+  size: 46, 48
+  orig: 46, 50
+  offset: 0, 0
+  index: -1
+zhujiemian/xiaoqiqiu
+  rotate: false
+  xy: 1626, 1621
+  size: 76, 108
+  orig: 76, 108
+  offset: 0, 0
+  index: -1
+zhujiemian/xiaoyun
+  rotate: false
+  xy: 1236, 1173
+  size: 176, 58
+  orig: 176, 58
+  offset: 0, 0
+  index: -1
+zhujiemian/yun2
+  rotate: false
+  xy: 1864, 1865
+  size: 149, 126
+  orig: 149, 126
+  offset: 0, 0
+  index: -1
+zhujiemian/yun3
+  rotate: false
+  xy: 719, 1052
+  size: 307, 179
+  orig: 308, 200
+  offset: 1, 21
+  index: -1

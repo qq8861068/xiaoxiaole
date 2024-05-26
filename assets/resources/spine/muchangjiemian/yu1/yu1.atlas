@@ -1,0 +1,13 @@
+
+yu1.png
+size: 64,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+yu/yu1
+  rotate: false
+  xy: 2, 2
+  size: 43, 93
+  orig: 100, 100
+  offset: 29, 3
+  index: -1

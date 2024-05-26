@@ -1,0 +1,13 @@
+
+fenxiangdong.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+zhujiemian/feiting2
+  rotate: false
+  xy: 2, 2
+  size: 254, 134
+  orig: 255, 135
+  offset: 1, 0
+  index: -1

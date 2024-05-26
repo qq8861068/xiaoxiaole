@@ -1,0 +1,69 @@
+
+chuangsanguan.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+chaifen/lingfuli/fulilingquzi
+  rotate: false
+  xy: 124, 139
+  size: 116, 32
+  orig: 116, 32
+  offset: 0, 0
+  index: -1
+chaifen/lingfuli/fuliquan_0
+  rotate: false
+  xy: 2, 118
+  size: 120, 128
+  orig: 143, 143
+  offset: 12, 7
+  index: -1
+chaifen/lingfuli/hezi
+  rotate: false
+  xy: 124, 173
+  size: 85, 73
+  orig: 85, 73
+  offset: 0, 0
+  index: -1
+chaifen/lingfuli/hudiejie
+  rotate: false
+  xy: 124, 96
+  size: 66, 41
+  orig: 66, 41
+  offset: 0, 0
+  index: -1
+chaifen/lingfuli/piaodaiyinying
+  rotate: false
+  xy: 233, 113
+  size: 21, 24
+  orig: 21, 24
+  offset: 0, 0
+  index: -1
+chaifen/lingfuli/piaodaiyou
+  rotate: false
+  xy: 192, 94
+  size: 39, 43
+  orig: 39, 43
+  offset: 0, 0
+  index: -1
+chaifen/lingfuli/piaodaizuo
+  rotate: false
+  xy: 211, 192
+  size: 40, 54
+  orig: 40, 54
+  offset: 0, 0
+  index: -1
+chaifen/lingfuli/piaoyouyin
+  rotate: false
+  xy: 120, 68
+  size: 28, 26
+  orig: 28, 26
+  offset: 0, 0
+  index: -1
+dipao
+  rotate: false
+  xy: 2, 2
+  size: 116, 114
+  orig: 116, 114
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,76 @@
+
+dahua.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+huahuazong/dahua/daghuadi
+  rotate: false
+  xy: 371, 184
+  size: 61, 47
+  orig: 61, 47
+  offset: 0, 0
+  index: -1
+huahuazong/dahua/dahuahua
+  rotate: false
+  xy: 243, 124
+  size: 48, 42
+  orig: 48, 42
+  offset: 0, 0
+  index: -1
+huahuazong/dahua/dahuaying
+  rotate: false
+  xy: 434, 198
+  size: 66, 33
+  orig: 66, 33
+  offset: 0, 0
+  index: -1
+huahuazong/dahua/xinhuaguang_0
+  rotate: false
+  xy: 2, 104
+  size: 136, 127
+  orig: 318, 280
+  offset: 94, 79
+  index: -1
+huahuazong/effect_1_0
+  rotate: false
+  xy: 157, 44
+  size: 15, 84
+  orig: 19, 112
+  offset: 2, 10
+  index: -1
+huahuazong/effect_2
+  rotate: false
+  xy: 133, 2
+  size: 22, 100
+  orig: 22, 124
+  offset: 0, 12
+  index: -1
+huahuazong/guangqiu2
+  rotate: false
+  xy: 243, 168
+  size: 63, 63
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+huahuazong/hongquan
+  rotate: false
+  xy: 140, 130
+  size: 101, 101
+  orig: 102, 101
+  offset: 1, 0
+  index: -1
+huahuazong/huanquan_0
+  rotate: false
+  xy: 2, 9
+  size: 129, 93
+  orig: 159, 140
+  offset: 15, 23
+  index: -1
+huahuazong/xingguang
+  rotate: false
+  xy: 308, 177
+  size: 61, 54
+  orig: 61, 54
+  offset: 0, 0
+  index: -1
