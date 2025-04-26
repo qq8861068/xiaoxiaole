@@ -12,14 +12,14 @@ import FlyEffect from "../FlyEffect";
 import LDataChallengeManager from "../datas/LDataChallengeManager";
 import GuidanceMgr from "../manager/GuidanceMgr";
 
-const {ccclass, property} = cc._decorator;
+const { ccclass, property } = cc._decorator;
 
-class CollectInfo{
-    node:cc.Node;
-    blockId:number;
-    curCount:number;
-    maxCount:number;
-    constructor(node:cc.Node,blockId:number,curCount:number,maxCount:number){
+class CollectInfo {
+    node: cc.Node;
+    blockId: number;
+    curCount: number;
+    maxCount: number;
+    constructor(node: cc.Node, blockId: number, curCount: number, maxCount: number) {
         this.node = node;
         this.blockId = blockId;
         this.curCount = curCount;
@@ -66,7 +66,7 @@ export default class MainView extends ViewBase {
 
     @property(cc.Sprite)
     sp_maskBg: cc.Sprite = null;
-    
+
     @property(cc.Node)
     node_mask: cc.Node = null;
 
@@ -97,22 +97,22 @@ export default class MainView extends ViewBase {
     @property(cc.Node) main_head_progress: cc.Node = null;
     @property([cc.Node]) main_head_stars: cc.Node[] = [];
 
-    shengyubushu2:cc.Node = null;
+    shengyubushu2: cc.Node = null;
 
-    collectInfo:CollectInfo [] = []
+    collectInfo: CollectInfo[] = []
 
-    collectPos:cc.Vec2 [] = []
+    collectPos: cc.Vec2[] = []
 
-    flyBlockCacheList:Block[] = []
+    flyBlockCacheList: Block[] = []
 
     //isadd5ed:boolean = false;
 
-    blockBgEffect:cc.Node [] = [] 
+    blockBgEffect: cc.Node[] = []
 
-    refreshView(isFristRefresh:boolean = false){
+    refreshView(isFristRefresh: boolean = false) {
         //测试用
         // (window as any).CommonTest = Common;
-        
+
         Common.userGetgold = UserInfo.userGold;
 
         Common.curSelectBlock = null
@@ -122,12 +122,15 @@ export default class MainView extends ViewBase {
         const allStep = Common.curLevelData.step;
         const x0 = (allStep - 8) / allStep * 128;
         this.main_head_stars[0].x = x0;
+        console.log("000000000坐标修改了", x0);
+
         const x1 = (allStep - 5) / allStep * 128;
         this.main_head_stars[1].x = x1;
-
-        Common.DaoJuSum.splice(0,Common.DaoJuSum.length);
-        for(let i=0;i<19;i++){
-            Common.DaoJuSum[i]=0;
+        console.log("111111111111坐标修改了", x1);
+        console.log("22222222222坐标修改了", this.main_head_stars[2].x);
+        Common.DaoJuSum.splice(0, Common.DaoJuSum.length);
+        for (let i = 0; i < 19; i++) {
+            Common.DaoJuSum[i] = 0;
         }
         console.log("*************************开始统计步数和道具消除情况**********************")
 
@@ -137,13 +140,13 @@ export default class MainView extends ViewBase {
         //SoundManager.playBackGroundMusic(Define.backgroundmusic[1]);
         //this.isadd5ed = false;
         //this.text_gold.string = UserInfo.userGold.toString();
-        this.text_gold.string = UserInfo.userGold>999999?"999999+":UserInfo.userGold.toString();
+        this.text_gold.string = UserInfo.userGold > 999999 ? "999999+" : UserInfo.userGold.toString();
 
         this.btn_game_tool_chui_label.string = `${UserInfo.gameTools[0]}`
         this.btn_game_tool_heng_label.string = `${UserInfo.gameTools[1]}`
         this.btn_game_tool_shu_label.string = `${UserInfo.gameTools[2]}`
 
-        
+
 
         //鹤待机动画
         //this.node_juesehe.removeAllChildren(true);
@@ -178,33 +181,33 @@ export default class MainView extends ViewBase {
         // }.bind(this),false,false);
 
 
-        this.node_selectedIcon.setPosition(10000,10000);
+        this.node_selectedIcon.setPosition(10000, 10000);
         this.node_selectedIcon.runAction(cc.repeatForever(cc.sequence(cc.fadeIn(0.5), cc.fadeOut(0.5))));
 
 
         Common.resetDatas()
 
-        if(Common.gameModel == Define.gameModel_Normal){
-            this.xiaochu_niu.active=false;
+        if (Common.gameModel == Define.gameModel_Normal) {
+            this.xiaochu_niu.active = false;
             //let level:number = UserInfo.userLevel>Common.maxLevel?Common.getRandom(38,Common.maxLevel+1):UserInfo.userLevel;
-            let level:number=Common.mapLevel;
+            let level: number = Common.mapLevel;
 
             // let aa=level%3+1;
             // //console.log("播放了背景音乐"+aa);
 
             // SoundManager.playBackGroundMusic(Define.backgroundmusic[aa]);
-            
+
             this.text_level.string = `第${UserInfo.userLevel.toString()}关`;
 
-            if(UserInfo.userLevel>Common.maxLevel){
-                WXHelper.addTotalEvent("关卡等级 : ",UserInfo.userLevel.toString())
-            }else{
-                WXHelper.addTotalEvent("关卡等级 : ",level.toString())
+            if (UserInfo.userLevel > Common.maxLevel) {
+                WXHelper.addTotalEvent("关卡等级 : ", UserInfo.userLevel.toString())
+            } else {
+                WXHelper.addTotalEvent("关卡等级 : ", level.toString())
             }
-            BlockManager.getInstance().initAllBlocks(level,this.node_blockBg)
+            BlockManager.getInstance().initAllBlocks(level, this.node_blockBg)
             this.initLevelInfo()
 
-        }else if(Common.gameModel == Define.gameModel_Challenge){
+        } else if (Common.gameModel == Define.gameModel_Challenge) {
             // WXHelper.addTotalEvent("挑战赛 : ",Common.challengeLevel.toString())
             // this.xiaochu_niu.active =false;
 
@@ -223,14 +226,14 @@ export default class MainView extends ViewBase {
             //UIManager.getInstance().showView(Define.viewGuid3);
         }
 
-        
-        let tempStrArr:string [] = Common.curLevelData.mapImg.split(";")
-        let mapId:number = Number(tempStrArr[Common.getRandom(0,tempStrArr.length)])
+
+        let tempStrArr: string[] = Common.curLevelData.mapImg.split(";")
+        let mapId: number = Number(tempStrArr[Common.getRandom(0, tempStrArr.length)])
 
 
 
         //let tempArr:string [] = Common.curLevelData.music.split(";")
-        let musicId:number =  Common.curLevelData.music+1;
+        let musicId: number = Common.curLevelData.music + 1;
         // console.log("mapId::"+mapId);
         // let aa=mapId+1;  
         // if(aa==5)
@@ -240,35 +243,35 @@ export default class MainView extends ViewBase {
 
         //     aa=1;
         // }
-        
-        
+
+
         //console.log("aa::"+aa);
 
-        if(UserInfo.isLoop==1){
+        if (UserInfo.isLoop == 1) {
             // if(Common.changeMusicTaskTime!=null){
             //     Common.changeMusicTaskTime.setPause(false)
             // }
-        }else if(UserInfo.musicID==0){
-            SoundManager.pauseBackGroundSound(false,Define.backgroundmusic[musicId]);
-        }else{
-            SoundManager.pauseBackGroundSound(false,Define.gamemusic[UserInfo.musicID]);
+        } else if (UserInfo.musicID == 0) {
+            SoundManager.pauseBackGroundSound(false, Define.backgroundmusic[musicId]);
+        } else {
+            SoundManager.pauseBackGroundSound(false, Define.gamemusic[UserInfo.musicID]);
         }
 
 
         //SoundManager.pauseBackGroundSound(false,Define.backgroundmusic[musicId]);
 
         for (let index = 0; index < this.node_bgRoot.childrenCount; index++) {
-            if(index == mapId){
+            if (index == mapId) {
                 this.node_bgRoot.children[index].active = true
-            }else{
+            } else {
                 this.node_bgRoot.children[index].active = false
             }
         }
     }
 
-    addEvent(){
-        Common.addClickEvent(this.btn_back,this.onClick.bind(this));
-        Common.addClickEvent(this.ceshi_btn,this.onClick.bind(this));
+    addEvent() {
+        Common.addClickEvent(this.btn_back, this.onClick.bind(this));
+        Common.addClickEvent(this.ceshi_btn, this.onClick.bind(this));
         Common.addClickEvent(this.btn_game_tool_chui, this.onClick.bind(this));
         Common.addClickEvent(this.btn_game_tool_heng, this.onClick.bind(this));
         Common.addClickEvent(this.btn_game_tool_shu, this.onClick.bind(this));
@@ -309,146 +312,197 @@ export default class MainView extends ViewBase {
         }, this);
     }
 
-    onClick(tag:string){
-        
-        if(tag == "btn_back"){
-            if(GuidanceMgr.getInstance().isShowing || (GuidanceMgr.getInstance().getCurId()>=3 && GuidanceMgr.getInstance().getCurId()<=7)){
+    onClick(tag: string) {
+
+        if (tag == "btn_back") {
+            if (GuidanceMgr.getInstance().isShowing || (GuidanceMgr.getInstance().getCurId() >= 3 && GuidanceMgr.getInstance().getCurId() <= 7)) {
                 return;
             }
-            if(Common.gameModel == Define.gameModel_Normal){
+            if (Common.gameModel == Define.gameModel_Normal) {
                 UIManager.getInstance().showView(Define.viewExit)
-            }else if(Common.gameModel == Define.gameModel_Challenge){
+            } else if (Common.gameModel == Define.gameModel_Challenge) {
                 // UIManager.getInstance().showView(Define.viewChallengeExit)
             }
 
             //BlockManager.getInstance().eliminateSuggest();
             //UIManager.getInstance().hideView(Define.viewMain)
             //UIManager.getInstance().showView(Define.viewStart)
-        } else if(tag == "btn_game_tool_chui") {
+        } else if (tag == "btn_game_tool_chui") {
             const chuiCount = UserInfo.gameTools[0];
             if (chuiCount <= 0) {
+                console.log("没锤子了");
+                WXHelper.showVideo(function (state) {
+                    if (state == 1) {
+                        Common.showPrompt("广告已看完!");
+                        UserInfo.saveGameTools(0, chuiCount + 1);
+                        this.btn_game_tool_chui_label.string = `${chuiCount + 1}`;
+                        if (this.btn_game_tool_chui_label.string == "0") {
+                            this.btn_game_tool_chui.getChildByName("tishi").active = true
+                        } else {
+                            this.btn_game_tool_chui.getChildByName("tishi").active = false
+                        }
+                    } else {
+                        Common.showPrompt("广告未观看完!");
+                    }
+
+                }.bind(this))
+
                 return;
             }
             UserInfo.saveGameTools(0, chuiCount - 1);
             this.btn_game_tool_chui_label.string = `${chuiCount - 1}`;
+            if (this.btn_game_tool_chui_label.string == "0") {
+                this.btn_game_tool_chui.getChildByName("tishi").active = true
+            } else {
+                this.btn_game_tool_chui.getChildByName("tishi").active = false
+            }
             //展示道具指示界面
             this.game_tool_zhezhao_chui.active = true;
-        } else if(tag == "btn_game_tool_heng") {
+        } else if (tag == "btn_game_tool_heng") {
             const hengCount = UserInfo.gameTools[1];
             if (hengCount <= 0) {
+                console.log("没heng了");
+                WXHelper.showVideo(function (state) {
+                    if (state == 1) {
+                        Common.showPrompt("广告已看完!");
+                        UserInfo.saveGameTools(1, hengCount - 1);
+                        this.btn_game_tool_heng_label.string = `${hengCount - 1}`;
+                        if (this.btn_game_tool_heng_label.string == "0") {
+                            this.btn_game_tool_heng.getChildByName("tishi").active = true
+                        } else {
+                            this.btn_game_tool_heng.getChildByName("tishi").active = false
+                        }
+                    } else {
+                        Common.showPrompt("广告未观看完!");
+                    }
+
+                }.bind(this))
                 return;
             }
-            UserInfo.saveGameTools(1, hengCount - 1);
-            this.btn_game_tool_heng_label.string = `${hengCount - 1}`;
+
             //展示道具指示界面
             this.game_tool_zhezhao_heng.active = true;
-        } else if(tag == "btn_game_tool_shu") {
+        } else if (tag == "btn_game_tool_shu") {
             const shuCount = UserInfo.gameTools[2];
             if (shuCount <= 0) {
+                console.log("没竖了");
+                WXHelper.showVideo(function (state) {
+                    if (state == 1) {
+                        Common.showPrompt("广告已看完!");
+                        UserInfo.saveGameTools(2, shuCount - 1);
+                        this.btn_game_tool_shu_label.string = `${shuCount - 1}`;
+                        if (this.btn_game_tool_shu_label.string == "0") {
+                            this.btn_game_tool_heng.getChildByName("tishi").active = true
+                        } else {
+                            this.btn_game_tool_shu.getChildByName("tishi").active = false
+                        }
+                    } else {
+                        Common.showPrompt("广告未观看完!");
+                    }
+
+                }.bind(this))
                 return;
             }
-            UserInfo.saveGameTools(2, shuCount - 1);
-            this.btn_game_tool_shu_label.string = `${shuCount - 1}`;
+
             //展示道具指示界面
             this.game_tool_zhezhao_shu.active = true;
-        } else if(tag == "ceshi_btn"){
-            console.log("按钮下落检测"); 
+        } else if (tag == "ceshi_btn") {
+            console.log("按钮下落检测");
             BlockManager.getInstance().handlerBlocks();
         }
     }
 
-    initView(){       
+    initView() {
         Common.blockNodeRoot = this.node_blockRoot;
-        
+
         Common.nodeSpineRoot = this.node_spineRoot;
 
         Common.nodePromptRoot = this.node_promptRoot;
 
-        Common.nodeSelectedRoot =this.node_selectedIcon;
+        Common.nodeSelectedRoot = this.node_selectedIcon;
         //SoundManager.palySoundById(Define.xiaochuyinyue,true);
     }
 
     //初始化关卡信息
-    initLevelInfo(){
+    initLevelInfo() {
 
         console.log("主界面初始化关卡数据");
         this.collectInfo = []
         this.collectPos = []
-        let infoArr:string [] = Common.curLevelData.collectInfo.split(';')
+        let infoArr: string[] = Common.curLevelData.collectInfo.split(';')
         for (let index = 0; index < infoArr.length; index++) {
-            let arr:string [] = infoArr[index].split(',')
-            let tempNode:cc.Node = cc.instantiate(this.node_item)
-            this.collectInfo.push(new CollectInfo(tempNode,Number(arr[0]),0,Number(arr[1])))
+            let arr: string[] = infoArr[index].split(',')
+            let tempNode: cc.Node = cc.instantiate(this.node_item)
+            this.collectInfo.push(new CollectInfo(tempNode, Number(arr[0]), 0, Number(arr[1])))
         }
 
         for (let index = 0; index < this.collectInfo.length; index++) {
-            let info:CollectInfo = this.collectInfo[index]
+            let info: CollectInfo = this.collectInfo[index]
             //info.maxCount=5;//测试临时        
             info.node.position = cc.Vec2.ZERO
 
 
-            if(info.blockId<18)
-            {
-                Common.collectFormID=0;
+            if (info.blockId < 18) {
+                Common.collectFormID = 0;
                 let tempNode = info.node.children[1]
-                tempNode.children[2].getComponent<cc.Label>(cc.Label).string = "0/"+info.maxCount.toString()
+                tempNode.children[2].getComponent<cc.Label>(cc.Label).string = "0/" + info.maxCount.toString()
                 tempNode.children[0].getComponent<cc.Sprite>(cc.Sprite).spriteFrame = Common.atlasBlock.getSpriteFrame(Define.blockIconArr[info.blockId])
                 this.node_items.addChild(info.node)
-            }else if(info.blockId>=18&&info.blockId<24){
+            } else if (info.blockId >= 18 && info.blockId < 24) {
                 Common.collectFormID = info.blockId;
                 info.node.getComponent<cc.Sprite>(cc.Sprite).spriteFrame = Common.atlasBlock1.getSpriteFrame("shoujixingzhuang_dizuo");
                 info.node.children[0].active = false;
                 let tempNode = info.node.children[1]
-                tempNode.children[2].getComponent<cc.Label>(cc.Label).string ="0/"+ info.maxCount.toString()
+                tempNode.children[2].getComponent<cc.Label>(cc.Label).string = "0/" + info.maxCount.toString()
                 tempNode.children[0].getComponent<cc.Sprite>(cc.Sprite).spriteFrame = Common.getFormSpriteFrame(info.blockId);
                 this.node_items.addChild(info.node)
-            }  
-            
+            }
+
         }
 
         this.node_items.getComponent<cc.Layout>(cc.Layout).updateLayout()
         for (let index = 0; index < this.collectInfo.length; index++) {
-            let info:CollectInfo = this.collectInfo[index]
+            let info: CollectInfo = this.collectInfo[index]
             this.collectPos[info.blockId] = info.node.convertToWorldSpaceAR(cc.Vec2.ZERO);
         }
         // this.collectPos[info.blockId] = info.node.convertToWorldSpaceAR(cc.Vec2.ZERO);
         console.log(this.collectPos)
     }
     //获得收集信息
-    getCollectInfoByBlockId(id:number){
+    getCollectInfoByBlockId(id: number) {
         for (let index = 0; index < this.collectInfo.length; index++) {
-            if(this.collectInfo[index].blockId == id){
+            if (this.collectInfo[index].blockId == id) {
                 return this.collectInfo[index]
             }
         }
         return null
     }
     //是否胜利
-    isGameWin(){
-        let count:number = 0
+    isGameWin() {
+        let count: number = 0
         for (let index = 0; index < this.collectInfo.length; index++) {
-            if(this.collectInfo[index].curCount >= this.collectInfo[index].maxCount){
+            if (this.collectInfo[index].curCount >= this.collectInfo[index].maxCount) {
                 count = count + 1
             }
         }
         return count == this.collectInfo.length
     }
     //更新收集信息
-    updateCollectInfo(blockId:number){
-        let info:CollectInfo =  this.getCollectInfoByBlockId(blockId)
-        if(info != null){
+    updateCollectInfo(blockId: number) {
+        let info: CollectInfo = this.getCollectInfoByBlockId(blockId)
+        if (info != null) {
             info.curCount = info.curCount + 1
-            info.curCount = Math.min(info.curCount,info.maxCount)
+            info.curCount = Math.min(info.curCount, info.maxCount)
 
-            info.node.children[1].children[2].runAction(cc.sequence(cc.delayTime(0.5),cc.callFunc(function(){
-                info.node.children[1].children[2].getComponent<cc.Label>(cc.Label).string = info.curCount.toString()+'/'+info.maxCount.toString()
-            }.bind(this))))            
+            info.node.children[1].children[2].runAction(cc.sequence(cc.delayTime(0.5), cc.callFunc(function () {
+                info.node.children[1].children[2].getComponent<cc.Label>(cc.Label).string = info.curCount.toString() + '/' + info.maxCount.toString()
+            }.bind(this))))
             //info.node.children[0].children[2].getComponent<cc.Label>(cc.Label).string = info.curCount.toString()+'/'+info.maxCount.toString()
         }
         return info
     }
 
-    hideView(){
+    hideView() {
         super.hideView();
         BlockManager.getInstance().clearAll()
         for (let index = 0; index < this.collectInfo.length; index++) {
@@ -460,25 +514,23 @@ export default class MainView extends ViewBase {
     }
 
     //额外的事件调用
-    message(eventTag:string = "defualt",args:any = null){
-        if(eventTag == "start"){
+    message(eventTag: string = "defualt", args: any = null) {
+        if (eventTag == "start") {
             //开始游戏
-            BlockManager.getInstance().initAllBlocks(args,this.node_blockBg)
-        }else if(eventTag == 'step'){
+            BlockManager.getInstance().initAllBlocks(args, this.node_blockBg)
+        } else if (eventTag == 'step') {
             this.text_step.string = Common.curTotalStep.toString();
 
-            if(Common.curTotalStep<=5 && Common.curTotalStep>=1)
-            {
-                this.text_step.node.parent.scale=1;
+            if (Common.curTotalStep <= 5 && Common.curTotalStep >= 1) {
+                this.text_step.node.parent.scale = 1;
                 this.text_step.node.parent.stopAllActions();
                 //let doudong = cc.sequence(cc.moveBy(0.1,0,10), cc.moveBy(0.1,-10,0),cc.moveBy(0.1,0,-10),cc.moveBy(0.1,10,0));
                 let suofang = cc.sequence(cc.scaleTo(0.1, 1.4, 1.4), cc.scaleTo(0.1, 1, 1));
-                let ani = cc.sequence(suofang,suofang,suofang,suofang,suofang,cc.delayTime(2));
+                let ani = cc.sequence(suofang, suofang, suofang, suofang, suofang, cc.delayTime(2));
                 this.text_step.node.parent.runAction(cc.repeatForever(ani));
             }
-            else
-            {
-                this.text_step.node.parent.scale=1;
+            else {
+                this.text_step.node.parent.scale = 1;
                 this.text_step.node.parent.stopAllActions();
             }
 
@@ -488,26 +540,26 @@ export default class MainView extends ViewBase {
             const width = 18 + (128 - 18) * p;
             this.main_head_progress.width = width;
 
-        }else if(eventTag == "subStep"){
+        } else if (eventTag == "subStep") {
             Common.isCheckGameOver = false
             Common.curTotalStep = Common.curTotalStep - 1
 
             this.text_step.string = Common.curTotalStep.toString();
-            if(Common.curTotalStep == 0){
+            if (Common.curTotalStep == 0) {
                 this.shengyubushu2.destroy();
                 this.shengyubushu2 = null
             }
-        }else if(eventTag == 'gold'){
-            
-            let goldPos=this.text_gold.node.parent.children[0].convertToWorldSpaceAR(cc.Vec2.ZERO)
-            
+        } else if (eventTag == 'gold') {
+
+            let goldPos = this.text_gold.node.parent.children[0].convertToWorldSpaceAR(cc.Vec2.ZERO)
+
             // Common.playSkeletonById(Define.skeleton_jibixiaoguo2,Common.nodeSpineRoot,args.x,args.y,function(effectNode:cc.Node){
 
             //     let ani = cc.spawn(cc.moveTo(2,goldPos.x,goldPos.y).easing(cc.easeBackInOut()),cc.sequence(cc.scaleTo(0.15,2.2),cc.scaleTo(1.25,1)))
             //     effectNode.runAction(cc.sequence(ani,cc.callFunc(function(){                    
             //         effectNode.destroy();                  
             //     }.bind(this)))) 
-                
+
             //     effectNode.runAction(cc.sequence(cc.delayTime(1.8),cc.callFunc(function(){
             //         Common.playSkeletonById(Define.skeleton_jibixiaoguo1,Common.nodeSpineRoot,goldPos.x,goldPos.y,function(effectNode:cc.Node){
             //             effectNode.runAction(cc.sequence(cc.delayTime(0.4),cc.callFunc(function(){
@@ -515,75 +567,72 @@ export default class MainView extends ViewBase {
             //             }.bind(this))))                        
             //         }.bind(this),false,true)                  
             //     }.bind(this)))) 
-                
+
             // }.bind(this),false,false);
 
 
-            Common.playSkeletonById(Define.skeleton_jibixiaoguo1,Common.nodeSpineRoot,args.x,args.y,function(effectNode:cc.Node){
-                effectNode.runAction(cc.sequence(cc.delayTime(0.65),cc.callFunc(function(){
-                    Common.playSkeletonById(Define.skeleton_jibixiaoguo2,Common.nodeSpineRoot,args.x,args.y,function(effectNode:cc.Node){ 
+            Common.playSkeletonById(Define.skeleton_jibixiaoguo1, Common.nodeSpineRoot, args.x, args.y, function (effectNode: cc.Node) {
+                effectNode.runAction(cc.sequence(cc.delayTime(0.65), cc.callFunc(function () {
+                    Common.playSkeletonById(Define.skeleton_jibixiaoguo2, Common.nodeSpineRoot, args.x, args.y, function (effectNode: cc.Node) {
                         let bezier = [cc.v2(0, 1000), cc.v2(100, 1200), cc.v2(goldPos.x, goldPos.y)];
-                        if(effectNode.x>360)
-                        {
+                        if (effectNode.x > 360) {
                             bezier = [cc.v2(750, 1000), cc.v2(500, 1200), cc.v2(goldPos.x, goldPos.y)];
                         }
                         //let moveto=cc.moveTo(2,goldPos.x,goldPos.y).easing(cc.easeBackInOut())                       
-                        let bezierTo = cc.bezierTo(1.5, bezier); 
+                        let bezierTo = cc.bezierTo(1.5, bezier);
 
-                        let ani = cc.spawn(bezierTo,cc.sequence(cc.scaleTo(0.15,2.2),cc.scaleTo(1.25,1)))
-                        effectNode.runAction(cc.sequence(ani,cc.callFunc(function(){  
+                        let ani = cc.spawn(bezierTo, cc.sequence(cc.scaleTo(0.15, 2.2), cc.scaleTo(1.25, 1)))
+                        effectNode.runAction(cc.sequence(ani, cc.callFunc(function () {
 
                             //UserInfo.addGold(1,false);
                             //console.log("金币加1");
-                            this.text_gold.string = UserInfo.userGold>999999?"999999+":UserInfo.userGold.toString();                            
+                            this.text_gold.string = UserInfo.userGold > 999999 ? "999999+" : UserInfo.userGold.toString();
                             //console.log("金币刷新了");
-                            effectNode.destroy();                  
-                        }.bind(this)))) 
-                    }.bind(this),false,false)                  
-                }.bind(this))))                
-            }.bind(this),false,true);
+                            effectNode.destroy();
+                        }.bind(this))))
+                    }.bind(this), false, false)
+                }.bind(this))))
+            }.bind(this), false, true);
 
-                       
-        }else if(eventTag == "collect"){
 
-    
-            let block:Block = args as Block
+        } else if (eventTag == "collect") {
 
-            let newBlockId=block.blockId;
-            if(block.data.eliminateType==2||block.data.eliminateType==3)
-            {
-                newBlockId=block.blockId-2;
+
+            let block: Block = args as Block
+
+            let newBlockId = block.blockId;
+            if (block.data.eliminateType == 2 || block.data.eliminateType == 3) {
+                newBlockId = block.blockId - 2;
             }
-            if(this.updateCollectInfo(newBlockId) == null){
+            if (this.updateCollectInfo(newBlockId) == null) {
                 return
             }
 
-            
-            this.createFlyBlockById(10000,10000,newBlockId,function(newBlock:Block){ 
-                
-                
 
-                newBlock.flyEffect(block.getScenePos(),this.collectPos[newBlockId])
-                
-                
-                let info:CollectInfo = this.getCollectInfoByBlockId(newBlockId)
-                if(info != null)
-                {
+            this.createFlyBlockById(10000, 10000, newBlockId, function (newBlock: Block) {
+
+
+
+                newBlock.flyEffect(block.getScenePos(), this.collectPos[newBlockId])
+
+
+                let info: CollectInfo = this.getCollectInfoByBlockId(newBlockId)
+                if (info != null) {
                     info.node.children[1].children[0].stopAllActions();
-                   
-                    info.node.children[1].children[0].runAction(cc.sequence(cc.delayTime(0.4),cc.callFunc(function(){ 
-                        Common.playSkeletonById(Define.skeleton_huodetishi1,info.node.children[1],0,0,null,false,true);
-                    }.bind(this)),cc.scaleTo(0.2, 1.2, 1.2), cc.scaleTo(0.3, 1,1)));
-                    
-                }               
-            }.bind(this),this.node_spineRoot,false)
 
-            if(this.isGameWin()){
-                if(Common.gameProgress == Define.gameing){
+                    info.node.children[1].children[0].runAction(cc.sequence(cc.delayTime(0.4), cc.callFunc(function () {
+                        Common.playSkeletonById(Define.skeleton_huodetishi1, info.node.children[1], 0, 0, null, false, true);
+                    }.bind(this)), cc.scaleTo(0.2, 1.2, 1.2), cc.scaleTo(0.3, 1, 1)));
+
+                }
+            }.bind(this), this.node_spineRoot, false)
+
+            if (this.isGameWin()) {
+                if (Common.gameProgress == Define.gameing) {
                     Common.gameProgress = Define.gameCollectFinish
                     console.log("游戏胜利了")
                 }
-               
+
                 // if(!Common.isGameOver)
                 // {
                 //     this.victoryEffect();
@@ -592,41 +641,36 @@ export default class MainView extends ViewBase {
                 // 
                 // Common.isGameOver = true              
             }
-        }else if(eventTag == "recycle")
-        {
+        } else if (eventTag == "recycle") {
             args.node.scale = 1;
             this.flyBlockCacheList.push(args)
         }
-        else if(eventTag == "clear")
-        {           
+        else if (eventTag == "clear") {
             this.clear();
-        }else if(eventTag =="gameover")
-        {
+        } else if (eventTag == "gameover") {
             // let ani=cc.sequence(cc.callFunc(function(){}.bind(this),cc.delayTime(3),cc.callFunc(function(){}.bind(this),cc.delayTime(1)))
             // .runAction(ani);
 
-            Common.nodeSoundRoot.runAction(cc.sequence(cc.callFunc(function(){
-                SoundManager.pauseBackGroundSound(true,Common.curMusicRes);
-                      
-            }.bind(this)),cc.delayTime(1),cc.callFunc(function(){
-                SoundManager.pauseBackGroundSound(false,Common.curMusicRes);
+            Common.nodeSoundRoot.runAction(cc.sequence(cc.callFunc(function () {
+                SoundManager.pauseBackGroundSound(true, Common.curMusicRes);
+
+            }.bind(this)), cc.delayTime(1), cc.callFunc(function () {
+                SoundManager.pauseBackGroundSound(false, Common.curMusicRes);
             }.bind(this))))
-               
 
-            SoundManager.palySoundById(Define.shibaiyinxiao,false);
 
-            if(!Common.isGameOver)
-            {
-                if(Common.isAdd5ed)
-                {
-                    if(Common.gameModel == Define.gameModel_Normal){
-                        UIManager.getInstance().showView(Define.viewOver,function(){
+            SoundManager.palySoundById(Define.shibaiyinxiao, false);
+
+            if (!Common.isGameOver) {
+                if (Common.isAdd5ed) {
+                    if (Common.gameModel == Define.gameModel_Normal) {
+                        UIManager.getInstance().showView(Define.viewOver, function () {
                             console.log("显示失败界面");
-                            UIManager.getInstance().sendMessage(Define.viewOver,'update',this.collectInfo)
+                            UIManager.getInstance().sendMessage(Define.viewOver, 'update', this.collectInfo)
                         }.bind(this));
-                        
-                    }else if(Common.gameModel == Define.gameModel_Challenge){
-               
+
+                    } else if (Common.gameModel == Define.gameModel_Challenge) {
+
                         // UIManager.getInstance().showView(Define.viewChallengeLose,function(){
                         //     UIManager.getInstance().sendMessage(Define.viewChallengeLose,'3')
                         // }.bind(this));
@@ -634,25 +678,23 @@ export default class MainView extends ViewBase {
                     //UIManager.getInstance().showView(Define.viewOver);
                     //Common.isGameOver = true;
                 }
-                else
-                {
-                    if(Common.gameModel == Define.gameModel_Normal){
+                else {
+                    if (Common.gameModel == Define.gameModel_Normal) {
                         UIManager.getInstance().showView(Define.viewLose);
-                    }else if(Common.gameModel == Define.gameModel_Challenge){
+                    } else if (Common.gameModel == Define.gameModel_Challenge) {
                         // UIManager.getInstance().showView(Define.viewChallengeLose,function(){
                         //     UIManager.getInstance().sendMessage(Define.viewChallengeLose,'1')
                         // }.bind(this));
                     }
                     //UIManager.getInstance().showView(Define.viewLose);
-                }                
-            }        
-        }else if(eventTag =="add5")
-        {
+                }
+            }
+        } else if (eventTag == "add5") {
             Common.isGameOver = false;
             Common.isAdd5ed = true;
             Common.curTotalStep = 10;
-            UIManager.getInstance().sendMessage(Define.viewMain,'step')
-        }else if(eventTag == "flyEffect"){
+            UIManager.getInstance().sendMessage(Define.viewMain, 'step')
+        } else if (eventTag == "flyEffect") {
             //this.node_juese.removeAllChildren(true);
 
             // let effectNode=this.node_juese.getChildByName("juesedonghua");
@@ -676,22 +718,22 @@ export default class MainView extends ViewBase {
 
             this.victoryEffect(args)
 
-        }else if(eventTag == 'bgEffect'){
+        } else if (eventTag == 'bgEffect') {
             this.blockBgEffect.push(args)
-        }else if(eventTag == "changeMapMask"){
+        } else if (eventTag == "changeMapMask") {
             this.changeMaskBgByMapType(args)
-        }else if(eventTag == "juesedonghua1"){ 
-            
-            
+        } else if (eventTag == "juesedonghua1") {
+
+
             // let effectNode=this.node_juese.getChildByName("juesedonghua");
-            
+
             // effectNode.getComponent(sp.Skeleton).setAnimation(0,"3dianzan", false);
 
             // effectNode.runAction(cc.sequence(cc.delayTime(3.5),cc.callFunc(function(){               
             //     effectNode.getComponent(sp.Skeleton).setAnimation(0, "2daiji", true);
             // }.bind(this))))
 
-            
+
             // this.node_juese.removeAllChildren(true);
             // Common.playSkeletonById(Define.skeleton_juesedonghua2,this.node_juese,0,0,function(effectNode:cc.Node){
             //     Common.isJueseTag=true;                   
@@ -713,49 +755,49 @@ export default class MainView extends ViewBase {
             //         }.bind(this))))                                       
             //     }.bind(this),false,false);
             // }           
-        }else if(eventTag == "shareAdd8"){
+        } else if (eventTag == "shareAdd8") {
             Common.isGameOver = false;
             Common.curTotalStep = 8;
-            UIManager.getInstance().sendMessage(Define.viewMain,'step')
-        }else if(eventTag =="collectshuye"){
+            UIManager.getInstance().sendMessage(Define.viewMain, 'step')
+        } else if (eventTag == "collectshuye") {
 
             //TODO树叶掉落
-            console.log("收集到一个树叶"+args.data.ID);
-        }else if(eventTag == "collectForm"){
+            console.log("收集到一个树叶" + args.data.ID);
+        } else if (eventTag == "collectForm") {
 
 
-            let newBlockId:number=args as number;
-            
-            if(this.updateCollectInfo(newBlockId) == null){
+            let newBlockId: number = args as number;
+
+            if (this.updateCollectInfo(newBlockId) == null) {
                 return
             }
 
-            
+
             // this.createFlyBlockById(10000,10000,newBlockId,function(newBlock:Block){ 
-                
-                
+
+
 
             //     newBlock.flyEffect(block.getScenePos(),this.collectPos[newBlockId])
-                
-                
+
+
             //     let info:CollectInfo = this.getCollectInfoByBlockId(newBlockId)
             //     if(info != null)
             //     {
             //         info.node.children[1].children[0].stopAllActions();
-                   
+
             //         info.node.children[1].children[0].runAction(cc.sequence(cc.delayTime(0.4),cc.callFunc(function(){ 
             //             Common.playSkeletonById(Define.skeleton_huodetishi1,info.node.children[1],0,0,null,false,true);
             //         }.bind(this)),cc.scaleTo(0.2, 1.2, 1.2), cc.scaleTo(0.3, 1,1)));
-                    
+
             //     }               
             // }.bind(this),this.node_spineRoot,false)
 
-            if(this.isGameWin()){
-                if(Common.gameProgress == Define.gameing){
+            if (this.isGameWin()) {
+                if (Common.gameProgress == Define.gameing) {
                     Common.gameProgress = Define.gameCollectFinish
                     console.log("游戏胜利了")
                 }
-               
+
                 // if(!Common.isGameOver)
                 // {
                 //     this.victoryEffect();
@@ -766,61 +808,59 @@ export default class MainView extends ViewBase {
             }
 
 
-        }else if(eventTag == "refreshGold"){
-            this.text_gold.string = UserInfo.userGold>999999?"999999+":UserInfo.userGold.toString();
+        } else if (eventTag == "refreshGold") {
+            this.text_gold.string = UserInfo.userGold > 999999 ? "999999+" : UserInfo.userGold.toString();
             Common.userGetgold = UserInfo.userGold;
         }
     }
-    victoryEffect(blockList)
-    {
+    victoryEffect(blockList) {
         let sPos = this.text_step.node.convertToWorldSpaceAR(cc.Vec2.ZERO);
-        Common.playSkeletonById(Define.skeleton_shengyubushu1,Common.nodeSpineRoot,sPos.x,sPos.y+5,null,false,true);
+        Common.playSkeletonById(Define.skeleton_shengyubushu1, Common.nodeSpineRoot, sPos.x, sPos.y + 5, null, false, true);
 
-        Common.playSkeletonById(Define.skeleton_shengyubushu2,Common.nodeSpineRoot,sPos.x,sPos.y+5,function(effect){
+        Common.playSkeletonById(Define.skeleton_shengyubushu2, Common.nodeSpineRoot, sPos.x, sPos.y + 5, function (effect) {
             this.shengyubushu2 = effect
-        }.bind(this),false,false);
+        }.bind(this), false, false);
 
         for (let index = 0; index < blockList.length; index++) {
-            Common.playSkeletonById(Define.skeleton_shengyufeixiao1,Common.nodeSpineRoot,sPos.x,sPos.y,function(effect:cc.Node){
+            Common.playSkeletonById(Define.skeleton_shengyufeixiao1, Common.nodeSpineRoot, sPos.x, sPos.y, function (effect: cc.Node) {
 
-                let angel=(Math.atan2((blockList[index].getScenePos().x-sPos.x),(blockList[index].getScenePos().y-sPos.y)))*180/Math.PI;                   
-                effect.rotation = angel+180;
+                let angel = (Math.atan2((blockList[index].getScenePos().x - sPos.x), (blockList[index].getScenePos().y - sPos.y))) * 180 / Math.PI;
+                effect.rotation = angel + 180;
 
-                if(index == blockList.length - 1){  
-                                    
-                    effect.addComponent<FlyEffect>(FlyEffect).Fly(sPos,blockList[index].getScenePos(),index*0.2,blockList[index].blockId,function(){
+                if (index == blockList.length - 1) {
+
+                    effect.addComponent<FlyEffect>(FlyEffect).Fly(sPos, blockList[index].getScenePos(), index * 0.2, blockList[index].blockId, function () {
                         console.log("飞行成功")
                         BlockManager.getInstance().removeBlockFlyEffect(blockList)
                         for (let index = 0; index < this.blockBgEffect.length; index++) {
                             this.blockBgEffect[index].destroy()
                         }
-                        this.blockBgEffect = [] 
+                        this.blockBgEffect = []
                     }.bind(this))
-                }else{
-                    effect.addComponent<FlyEffect>(FlyEffect).Fly(sPos,blockList[index].getScenePos(),index*0.2,blockList[index].blockId,null)
+                } else {
+                    effect.addComponent<FlyEffect>(FlyEffect).Fly(sPos, blockList[index].getScenePos(), index * 0.2, blockList[index].blockId, null)
                 }
-            }.bind(this),false,false)    
+            }.bind(this), false, false)
         }
     }
 
 
-    flySpine(sPos:cc.Vec2,ePoS:cc.Vec2,spineNode:cc.Node)
-    {
-        let luodi:cc.Node = null;
-        spineNode.runAction(cc.sequence(cc.moveTo(0.6,ePoS),cc.callFunc(function(){
-            luodi = Common.playSkeletonById(Define.skeleton_shengyufeixiao2,Common.nodeSpineRoot,sPos.x,sPos.y,function(){               
-            }.bind(this),false,false)
+    flySpine(sPos: cc.Vec2, ePoS: cc.Vec2, spineNode: cc.Node) {
+        let luodi: cc.Node = null;
+        spineNode.runAction(cc.sequence(cc.moveTo(0.6, ePoS), cc.callFunc(function () {
+            luodi = Common.playSkeletonById(Define.skeleton_shengyufeixiao2, Common.nodeSpineRoot, sPos.x, sPos.y, function () {
+            }.bind(this), false, false)
             //spineNode.destroy();
         }.bind(this))));
-        luodi.runAction(cc.sequence(cc.delayTime(1),cc.callFunc(function(){           
+        luodi.runAction(cc.sequence(cc.delayTime(1), cc.callFunc(function () {
             luodi.destroy();
         }.bind(this))));
     }
 
 
-    clear(){       
+    clear() {
         BlockManager.getInstance().clearAll()
-        for (let index = 0; index < this.collectInfo .length; index++) {
+        for (let index = 0; index < this.collectInfo.length; index++) {
             this.collectInfo[index].node.destroy()
         }
         this.node_items.removeAllChildren(true);
@@ -829,46 +869,46 @@ export default class MainView extends ViewBase {
     }
 
     //创建一个Fly格子
-    createFlyBlockById(row:number,col:number,blockId:number,callBack:Function = null,nodeRoot:cc.Node = null,isAddTag:boolean = true){
+    createFlyBlockById(row: number, col: number, blockId: number, callBack: Function = null, nodeRoot: cc.Node = null, isAddTag: boolean = true) {
 
-        if(this.flyBlockCacheList.length > 0){
-            let block:Block = this.flyBlockCacheList[0]
-            this.flyBlockCacheList.splice(0,1)
+        if (this.flyBlockCacheList.length > 0) {
+            let block: Block = this.flyBlockCacheList[0]
+            this.flyBlockCacheList.splice(0, 1)
             nodeRoot.addChild(block.node)
-            block.initFlyRowCol(row,col,blockId)
-            if(isAddTag){
+            block.initFlyRowCol(row, col, blockId)
+            if (isAddTag) {
                 //this.blockList.push(block)
             }
-            if(callBack){
+            if (callBack) {
                 callBack(block)
             }
             return
         }
 
-        ResManager.loadBlock(blockId,function(prefab){
-            let blockNode:cc.Node = cc.instantiate(prefab)
+        ResManager.loadBlock(blockId, function (prefab) {
+            let blockNode: cc.Node = cc.instantiate(prefab)
             nodeRoot.addChild(blockNode)
-            let block:Block = blockNode.addComponent<Block>(Block);
-            if(isAddTag){
+            let block: Block = blockNode.addComponent<Block>(Block);
+            if (isAddTag) {
                 //this.blockList.push(block)
             }
-            block.initFlyRowCol(row,col,blockId)
-            if(callBack){
+            block.initFlyRowCol(row, col, blockId)
+            if (callBack) {
                 callBack(block)
             }
         }.bind(this))
     }
     //切换遮挡的图
-    changeMaskBgByMapType(mapType:number){
-        let strbg:string = Define.mapMask[mapType]
-        let strbgMask:string = strbg + "_mask"
-        
-        ResManager.loadLevelBg(strbg,function(frame){
+    changeMaskBgByMapType(mapType: number) {
+        let strbg: string = Define.mapMask[mapType]
+        let strbgMask: string = strbg + "_mask"
+
+        ResManager.loadLevelBg(strbg, function (frame) {
             this.sp_maskBg.spriteFrame = frame
         }.bind(this))
 
-        let tempMask:cc.Mask = this.node_mask.getComponent<cc.Mask>(cc.Mask)
-        ResManager.loadLevelBg(strbgMask,function(frame){
+        let tempMask: cc.Mask = this.node_mask.getComponent<cc.Mask>(cc.Mask)
+        ResManager.loadLevelBg(strbgMask, function (frame) {
             tempMask.spriteFrame = frame
         }.bind(this))
     }

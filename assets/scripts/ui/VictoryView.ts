@@ -19,13 +19,13 @@ import BlockManager from "../manager/BlockManager";
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
 //  - [English] http://www.cocos2d-x.org/docs/creator/manual/en/scripting/life-cycle-callbacks.html
 
-const {ccclass, property} = cc._decorator;
+const { ccclass, property } = cc._decorator;
 
 @ccclass
 export default class VictoryView extends ViewBase {
 
     @property(cc.Node)
-    continue_btn: cc.Node = null;    
+    continue_btn: cc.Node = null;
     @property(cc.Node)
     share_btn: cc.Node = null;
     @property(cc.Node)
@@ -49,7 +49,7 @@ export default class VictoryView extends ViewBase {
     @property(cc.Node)
     shiping_btn: cc.Node = null;
 
-    
+
     @property(cc.Node)
     node_bg: cc.Node = null;
 
@@ -64,15 +64,15 @@ export default class VictoryView extends ViewBase {
 
     @property(cc.Label)
     text_reward2: cc.Label = null;
-    
-    
 
-    curID:number[]=[];
-    curCount:number[]=[];
 
-    
 
-    refreshView(isFristRefresh:boolean = false){
+    curID: number[] = [];
+    curCount: number[] = [];
+
+
+
+    refreshView(isFristRefresh: boolean = false) {
         BlockManager.getInstance().end_guid();
         // if(WXHelper.isLoadVideoSuccessful)
         // //if(false)
@@ -85,8 +85,8 @@ export default class VictoryView extends ViewBase {
         //     this.shiping_btn.active=false;
         // }
 
-        this.gold_lab.string=(UserInfo.userGold-Common.userGetgold).toString();
-        this.text_level.string=Common.mapLevel.toString();
+        this.gold_lab.string = (UserInfo.userGold - Common.userGetgold).toString();
+        this.text_level.string = Common.mapLevel.toString();
 
         let starCount = 1;
         //根据剩余步数，给予不同的胜利星星
@@ -109,36 +109,36 @@ export default class VictoryView extends ViewBase {
         //更新排行榜
         GameManager.getInstance().wxHelper.submitScore(Common.mapLevel)
         //清空道具id数组
-        this.curID.splice(0,this.curID.length);
-        this.curCount.splice(0,this.curCount.length);
+        this.curID.splice(0, this.curID.length);
+        this.curCount.splice(0, this.curCount.length);
 
         //Common.playSkeletonById(Define.skeleton_gongxishengli,this.gongxishengli,0,0,null,false,false);
 
-        Common.playSkeletonById(Define.skeleton_gongxishengli,this.gongxishengli,0,0,function(effect){                      
-            effect.getComponent(sp.Skeleton).setAnimation(0,"gongxishengli", false);
-            effect.runAction(cc.sequence(cc.delayTime(1.2),cc.callFunc(function(){ 
-            effect.getComponent(sp.Skeleton).setAnimation(0, "gongxishengli2", true);                
+        Common.playSkeletonById(Define.skeleton_gongxishengli, this.gongxishengli, 0, 0, function (effect) {
+            effect.getComponent(sp.Skeleton).setAnimation(0, "gongxishengli", false);
+            effect.runAction(cc.sequence(cc.delayTime(1.2), cc.callFunc(function () {
+                effect.getComponent(sp.Skeleton).setAnimation(0, "gongxishengli2", true);
             }.bind(this))));
-        }.bind(this),false,false)
+        }.bind(this), false, false)
 
-        let gold:number=UserInfo.userGold-Common.userGetgold;
+        let gold: number = UserInfo.userGold - Common.userGetgold;
 
-        if(WXHelper.isLoadVideoSuccessful){
+        if (WXHelper.isLoadVideoSuccessful) {
             //460   2
             //300   1
             this.node_bg.height = 460
             this.btn_get2.parent.active = true
-        }else{
+        } else {
             this.node_bg.height = 300
             this.btn_get2.parent.active = false
         }
 
-        this.text_reward1.string = "x"+gold.toString();
-        this.text_reward2.string = "x"+(gold*3).toString();
+        this.text_reward1.string = "x" + gold.toString();
+        this.text_reward2.string = "x" + (gold * 3).toString();
 
         //写入本地
         UserInfo.addGold(0);
-        if(Common.curLevelData != null){
+        if (Common.curLevelData != null) {
             //let isRewardTag:boolean = false
             /*
             let infoArr:string [] = Common.curLevelData.award.split(';')
@@ -195,53 +195,53 @@ export default class VictoryView extends ViewBase {
             //     GameManager.getInstance().wxHelper.submitScore(UserInfo.getPropCountById(Define.prop_kouhong))
             // }
 
-            if(Common.gameModel == Define.gameModel_Normal){
+            if (Common.gameModel == Define.gameModel_Normal) {
                 if (Common.mapLevel === UserInfo.userLevel) {
                     UserInfo.nextLevel()
                 }
                 this.close_btn.active = true
-            }else{
+            } else {
                 this.close_btn.active = false
                 Common.challengeLevel++
-                if(Common.challengeLevel == 4){
+                if (Common.challengeLevel == 4) {
                     //挑战关卡完成
-                    HttpManager.getInstance().addResidueLottery(function(data){
-                        if(data.obj != null){
-                           Common.userLotteryResidueCount = data.obj.residue_lottery
-                        //    UIManager.getInstance().showView(Define.viewTurntable,function(){
-                        //        UIManager.getInstance().sendMessage(Define.viewTurntable,"victory")
-                        //    }.bind(this))
+                    HttpManager.getInstance().addResidueLottery(function (data) {
+                        if (data.obj != null) {
+                            Common.userLotteryResidueCount = data.obj.residue_lottery
+                            //    UIManager.getInstance().showView(Define.viewTurntable,function(){
+                            //        UIManager.getInstance().sendMessage(Define.viewTurntable,"victory")
+                            //    }.bind(this))
                         }
                     }.bind(this))
                 }
             }
-        }   
+        }
     }
 
     //隐藏
-    hideView(){
+    hideView() {
         super.hideView();
         this.node_items.removeAllChildren(true)
         this.gongxishengli.removeAllChildren(true)
     }
 
-    addEvent(){
-        Common.addClickEvent(this.continue_btn,this.onClick.bind(this));
-        Common.addClickEvent(this.share_btn,this.onClick.bind(this));
-        Common.addClickEvent(this.close_btn,this.onClick.bind(this));
-        Common.addClickEvent(this.shiping_btn,this.onClick.bind(this));
+    addEvent() {
+        Common.addClickEvent(this.continue_btn, this.onClick.bind(this));
+        Common.addClickEvent(this.share_btn, this.onClick.bind(this));
+        Common.addClickEvent(this.close_btn, this.onClick.bind(this));
+        Common.addClickEvent(this.shiping_btn, this.onClick.bind(this));
 
-        Common.addClickEvent(this.btn_get1,this.onClick.bind(this));
-        Common.addClickEvent(this.btn_get2,this.onClick.bind(this));
+        Common.addClickEvent(this.btn_get1, this.onClick.bind(this));
+        Common.addClickEvent(this.btn_get2, this.onClick.bind(this));
     }
 
-    onClick(tag:string){       
-        if(tag == "continue_btn" || tag == "btn_get1"){
+    onClick(tag: string) {
+        if (tag == "continue_btn" || tag == "btn_get1") {
             Common.mapLevel = UserInfo.userLevel;
-            UIManager.getInstance().showView(Define.viewStart,function(){
+            UIManager.getInstance().showView(Define.viewStart, function () {
                 UIManager.getInstance().hideView(Define.viewVictory)
                 UIManager.getInstance().showView(Define.viewBegin)
-                UIManager.getInstance().hideView(Define.viewMain)                
+                UIManager.getInstance().hideView(Define.viewMain)
             }.bind(this))
 
             // this.scheduleOnce(() => {
@@ -254,7 +254,7 @@ export default class VictoryView extends ViewBase {
             // UIManager.getInstance().showView(Define.viewMain,function(){
             //     UIManager.getInstance().hideView(Define.viewVictory)               
             // }.bind(this))
-        }else if(tag == "share_btn"){
+        } else if (tag == "share_btn") {
 
 
             //测试用
@@ -273,7 +273,7 @@ export default class VictoryView extends ViewBase {
             //     }else if(this.curID[index]=Define.prop_star)
             //     {
             //         Rewardstring=Rewardstring+this.curID[index].toString()+","+(this.curCount[index]*2).toString()+";"
-                    
+
             //     }                       
             // }
             // Rewardstring=Rewardstring+"101,"+((UserInfo.userGold-Common.userGetgold)*2).toString();
@@ -282,75 +282,72 @@ export default class VictoryView extends ViewBase {
             // //Common.showRewardView("1,1;2,1;3,1;4,1;5,1;101,100");
             // UIManager.getInstance().sendMessage(Define.viewStart,"refreshPropInfo");
 
-            
-            
-            GameManager.getInstance().wxHelper.shareAppMessage("")         
-        }else if(tag == "close_btn"){
-            UIManager.getInstance().showView(Define.viewStart,function(){
-                UIManager.getInstance().hideView(Define.viewVictory)
-                UIManager.getInstance().hideView(Define.viewMain)                          
-            }.bind(this))           
-        }else if(tag == "btn_get2"){
-            WXHelper.showVideo(function(state){
-                if(state == 1){
 
-                    let gold:number=UserInfo.userGold-Common.userGetgold;
+
+            // GameManager.getInstance().wxHelper.shareAppMessage("")         
+        } else if (tag == "close_btn") {
+            UIManager.getInstance().showView(Define.viewStart, function () {
+                UIManager.getInstance().hideView(Define.viewVictory)
+                UIManager.getInstance().hideView(Define.viewMain)
+            }.bind(this))
+        } else if (tag == "btn_get2") {
+            WXHelper.showVideo(function (state) {
+                if (state == 1) {
+
+                    let gold: number = UserInfo.userGold - Common.userGetgold;
                     //UIManager.getInstance().sendMessage(Define.viewMain,'add5',null)
-                    UIManager.getInstance().showView(Define.viewStart,function(){
+                    UIManager.getInstance().showView(Define.viewStart, function () {
                         UIManager.getInstance().hideView(Define.viewVictory)
                         UIManager.getInstance().showView(Define.viewBegin)
-                        UIManager.getInstance().hideView(Define.viewMain)                          
-                    }.bind(this))                   
+                        UIManager.getInstance().hideView(Define.viewMain)
+                    }.bind(this))
                     //三倍奖励逻辑
-                    let Rewardstring="";
-                    let RewardstringShow="";
-                    Rewardstring=Rewardstring+"101,"+(gold*2).toString();
-                    RewardstringShow=RewardstringShow+"101,"+(gold*3).toString();
-                    UserInfo.addRewardInfo(Rewardstring);     
-                    Common.showRewardView(RewardstringShow);       
-                    UIManager.getInstance().sendMessage(Define.viewStart,"refreshPropInfo");
-                }else{
+                    let Rewardstring = "";
+                    let RewardstringShow = "";
+                    Rewardstring = Rewardstring + "101," + (gold * 2).toString();
+                    RewardstringShow = RewardstringShow + "101," + (gold * 3).toString();
+                    UserInfo.addRewardInfo(Rewardstring);
+                    Common.showRewardView(RewardstringShow);
+                    UIManager.getInstance().sendMessage(Define.viewStart, "refreshPropInfo");
+                } else {
                     Common.showPrompt("广告未观看完!");
                 }
-                SoundManager.pauseBackGroundSound(false,Define.backgroundmusic[0]);
+                SoundManager.pauseBackGroundSound(false, Define.backgroundmusic[0]);
             }.bind(this))
-        }else if(tag == "shiping_btn"){
+        } else if (tag == "shiping_btn") {
             //视频三倍奖励
             // 接广告
-            WXHelper.showVideo(function(state){
-                if(state == 1){
+            WXHelper.showVideo(function (state) {
+                if (state == 1) {
 
-                    let gold:number=UserInfo.userGold-Common.userGetgold;
+                    let gold: number = UserInfo.userGold - Common.userGetgold;
                     //UIManager.getInstance().sendMessage(Define.viewMain,'add5',null)
-                    UIManager.getInstance().showView(Define.viewStart,function(){
+                    UIManager.getInstance().showView(Define.viewStart, function () {
                         UIManager.getInstance().hideView(Define.viewVictory)
                         UIManager.getInstance().showView(Define.viewBegin)
-                        UIManager.getInstance().hideView(Define.viewMain)                          
-                    }.bind(this))                   
+                        UIManager.getInstance().hideView(Define.viewMain)
+                    }.bind(this))
                     //三倍奖励逻辑
-                    let Rewardstring="";
-                    let RewardstringShow="";
-                    for(let index = 0; index < this.curID.length; index++)
-                    {
-                        if(this.curID[index]<18)
-                        {
-                            Rewardstring=Rewardstring+this.curID[index].toString()+","+(this.curCount[index]*2).toString()+";"
-                            RewardstringShow=RewardstringShow+this.curID[index].toString()+","+(this.curCount[index]*3).toString()+";"
-                        }else if(this.curID[index]=Define.prop_star)
-                        {
-                            Rewardstring=Rewardstring+this.curID[index].toString()+","+(this.curCount[index]*2).toString()+";"
-                            RewardstringShow=RewardstringShow+this.curID[index].toString()+","+(this.curCount[index]*3).toString()+";"                           
-                        }                       
+                    let Rewardstring = "";
+                    let RewardstringShow = "";
+                    for (let index = 0; index < this.curID.length; index++) {
+                        if (this.curID[index] < 18) {
+                            Rewardstring = Rewardstring + this.curID[index].toString() + "," + (this.curCount[index] * 2).toString() + ";"
+                            RewardstringShow = RewardstringShow + this.curID[index].toString() + "," + (this.curCount[index] * 3).toString() + ";"
+                        } else if (this.curID[index] = Define.prop_star) {
+                            Rewardstring = Rewardstring + this.curID[index].toString() + "," + (this.curCount[index] * 2).toString() + ";"
+                            RewardstringShow = RewardstringShow + this.curID[index].toString() + "," + (this.curCount[index] * 3).toString() + ";"
+                        }
                     }
-                    Rewardstring=Rewardstring+"101,"+(gold*2).toString();
-                    RewardstringShow=RewardstringShow+"101,"+(gold*3).toString();
-                    UserInfo.addRewardInfo(Rewardstring);     
-                    Common.showRewardView(RewardstringShow);       
+                    Rewardstring = Rewardstring + "101," + (gold * 2).toString();
+                    RewardstringShow = RewardstringShow + "101," + (gold * 3).toString();
+                    UserInfo.addRewardInfo(Rewardstring);
+                    Common.showRewardView(RewardstringShow);
                     //Common.showRewardView("1,1;2,1;3,1;4,1;5,1;101,100");
-                    UIManager.getInstance().sendMessage(Define.viewStart,"refreshPropInfo");
-                }else{
+                    UIManager.getInstance().sendMessage(Define.viewStart, "refreshPropInfo");
+                } else {
                     Common.showPrompt("广告未观看完!");
-                    SoundManager.pauseBackGroundSound(false,Common.curMusicRes);
+                    SoundManager.pauseBackGroundSound(false, Common.curMusicRes);
                 }
                 //SoundManager.pauseBackGroundSound(false,Define.backgroundmusic[0]);
             }.bind(this))

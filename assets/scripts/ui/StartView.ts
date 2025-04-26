@@ -12,6 +12,7 @@ import LDataConsumeManager from "../datas/LDataConsumeManager";
 import GuidanceMgr from "../manager/GuidanceMgr";
 import PastureDataMgr from "../manager/PastureDataMgr";
 import LevelItem from "../ui2/LevelItem";
+import EventClass from "../manager/EventClass";
 
 // Learn TypeScript:
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/typescript.html
@@ -64,11 +65,21 @@ export default class StartView extends ViewBase {
     @property(cc.Sprite) row_main_head_show: cc.Sprite = null;
     @property(cc.Label) main_head_name: cc.Label = null;
 
+    //弹窗预制体
+    @property(cc.Prefab) tiliPop: cc.Prefab = null;
+
     isCanClickchallenge: boolean = true;
     isCanClicklottery: boolean = true;
 
-
-
+    protected start(): void {
+        EventClass.getInstance().addEventListener("changtili", this.changtili, this)
+    }
+    protected onDestroy(): void {
+        EventClass.getInstance().removeEventListener("changtili", this.changtili, this)
+    }
+    changtili() {
+        this.text_xin.string = UserInfo.userXin > 999 ? "999+" : UserInfo.userXin.toString();
+    }
     refreshView(isFristRefresh: boolean = false) {
 
         this.removeAllAni();
@@ -312,7 +323,7 @@ export default class StartView extends ViewBase {
     //根据当前关卡，滚动对应位置
     refreshScrollPosition() {
         const levelUnLock = UserInfo.userLevel;
-        const child = this.all_levels_root.children[levelUnLock-1];
+        const child = this.all_levels_root.children[levelUnLock - 1];
         const posx = child.x;
         const posy = child.y;
         this.head_row.stopAllActions();
@@ -346,7 +357,9 @@ export default class StartView extends ViewBase {
         this.text_star.string = starCount > 999 ? "999+" : starCount.toString();
         this.start_btn_label.string = `${UserInfo.userLevel}`;
     }
-
+    public changxin() {
+        this.text_xin.string = UserInfo.userXin > 999 ? "999+" : UserInfo.userXin.toString();
+    }
     dealUserHeadName() {
         //本地测试，不会跨域。接入头像跨域问题需要接入方开跨域自己解决
         // const headUrl = 'http://192.168.0.115:5500/headxx12.png'
@@ -415,7 +428,9 @@ export default class StartView extends ViewBase {
 
         } else if (tag == "xin_add_btn") {
             //展示获取体力的弹窗
-            UIManager.getInstance().showView(Define.viewRenWu);
+            // UIManager.getInstance().showView(Define.tiliPpo);
+            let pop = cc.instantiate(this.tiliPop)
+            pop.parent = this.node
 
         } else if (tag == "btn_setup") {
             //UIManager.getInstance().showView(Define.viewSetup)
